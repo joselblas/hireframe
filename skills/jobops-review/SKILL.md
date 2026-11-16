@@ -17,7 +17,7 @@ Run after about 20 submitted applications, then every one to two weeks, or when 
 - Outcomes by fit score band, to test whether the score predicts anything.
 - Applications with no outcome after 14 and 30 days (follow-up candidates).
 
-Reading it: under about 30 applications in a bucket, differences are hints, not findings. Say so. No response and an automatic rejection in under a day are different signals, the second suggests a filter. High gate failures from one source mean stop using it or add a filter. If score band does not predict outcomes, say so and do not defend the rubric. If response is low everywhere, check the CV and targeting before blaming the channel.
+Reading it: under about 30 applications in a bucket, differences are hints, not findings. Say so. No response and an automatic rejection in under a day are different signals, the second suggests a filter. High gate failures from one source mean stop using it or add a filter. If score band does not predict outcomes, say so and do not defend the rubric. If response is low everywhere, check the CV and targeting before blaming the channel. Near zero after 50+ applications: change the pool and channel before the price, and see where any interviews came from. Before suggesting a lower salary, check public pay data and name the source.
 
 Report: one-sentence headline; three findings, each with its number and how sure we are; one change to try and how we will know it worked; what was not measured. Do not turn weak signals into advice.
 

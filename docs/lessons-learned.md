@@ -16,6 +16,10 @@ Notes from running this on a real remote search. They are the reason the playboo
 - **Fetch one page per job site at a time.** Several requests to the same applicant system at once got rate limited, and a failed fetch is not a closed posting.
 - **Curated newsletters beat search.** A weekly list tagged by country gave more live, eligible roles in one read than a day of web search. Web search returns mostly old aggregator copies.
 - **Check your own history first.** Search the tracker before proposing a company. Some applicant systems reject duplicates, which can block a later, better role.
+- **Open job feeds by country exist.** Some community lists of tech companies publish a daily jobs file. Filter it by title, drop engineering titles that contain your keywords (a plain "ux" match also hits "Linux"), and mark companies already in the tracker. Treat each row as a pointer to the employer's page.
+- **Evergreen postings are talent pools.** A role that stays open for months is often a pool, not a seat. Apply if it fits, then ask the recruiter directly whether they are hiring now.
+- **Look for people you can reach.** Some job cards show contacts at the company, such as former colleagues or recruiters you already talked to. A short message to a named person beats one more cold form.
+- **Aggregator ads republished for months** with no change are a legitimacy signal. Note it, and find the employer's own page.
 
 ## CVs and profiles
 
@@ -32,6 +36,10 @@ Notes from running this on a real remote search. They are the reason the playboo
 - Salary fields can be numeric only. Type digits, and state the currency in a note field if there is one.
 - On some applicant systems the page blocks scripted reads but not fills. Check those forms by screenshot.
 - Stop at Submit. Every time.
+- **"I sent it" needs checking.** One application the person thought was sent was still a filled form. Check the site's "applied" list or the job page before logging it.
+- **Easy Apply forms drop an uploaded CV if you leave.** Upload, check the file name on the page, and submit in the same visit.
+- **Some file pickers cannot be reached by a browser tool.** If the upload button opens a picker the tool cannot see, the input may only exist for a moment. Make the page attach the input to the document, then use the tool's file upload on it.
+- **Some applicant systems need an account.** SuccessFactors-style portals and national job boards ask for a login before the form. The person signs in. Plan these as a separate step, not a blocker found at the end.
 
 ## Process
 
@@ -42,7 +50,16 @@ Notes from running this on a real remote search. They are the reason the playboo
 - **Rejections can come under another name.** A parent group, a talent brand or the applicant system may sign the email. Before you drop an email with no match, check who owns the company you applied to.
 - **A rejection is also a receipt.** One application had no confirmation page and was logged as unconfirmed. The rejection two weeks later proved it had gone through.
 - **Log the round the same day.** One round of five applications ran in a session with no access to the tracker folder. The tracker and the published numbers were wrong until the next session added the rows from the notes.
+- **Never delete files in the person's folders unless asked.** An agent tidied up temporary files nobody asked it to touch. Ask first, every time.
 - **Define each published number once.** "Stopped at a gate" first counted one status value and missed later rows that used other statuses. The number now comes from `scripts/funnel.py` (every row whose gate result starts with `fail`).
+
+## Positioning and pay
+
+- **Change the pool and the channel before the price.** After 100+ cold applications with no interview, the only interview had come from a recruiter. A lower salary ask did not change that. What changed it was a clearer positioning line and talking to people.
+- **The fit score did not predict interviews.** High-scored and mid-scored roles had the same response rate. The score is a filter for effort, not a forecast.
+- **Check market pay data before setting a floor.** Public salary datasets for your country and role show the middle range and the effect of years of experience. In one country, consultancies paid about a third less than product companies for the same title. Know which pool you are in.
+- **Keep every public profile saying the same thing.** Headline, About, education and the CV should match the fact file. Save the old text before you change a profile, so you can roll back.
+- **Show how you work with AI, with numbers.** A short portfolio page with real numbers (output per week before and after), the rules you keep (human sign-off, one source of facts, fixed gates) and a dated log works better than a list of tools. If faster output only moved the bottleneck, say that. It is the more senior lesson.
 
 ## Automated search tools
 

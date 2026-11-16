@@ -51,6 +51,8 @@ Before writing hooks for a role, write the positioning in one sentence: "For <wh
 
 Read only the top third of a CV or the first screen of a portfolio. Say what a recruiter would infer: role, level, sector, one proof, and the question they would ask. Compare with what the person wants them to infer. The gaps are the work.
 
+Then check consistency: the LinkedIn headline, About and education, the CV top third and the portfolio front door should say the same role and the same proof. List every mismatch. Save the old profile text before changing it.
+
 ## Rules
 
 - Never invent or round up a number to make a hook land.

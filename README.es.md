@@ -10,7 +10,7 @@ Una forma tranquila y cuidadosa de llevar una búsqueda de trabajo remoto con Cl
 
 **Por qué existe.** Soy diseñador UX. Usé IA para buscar trabajo y los resultados fueron pobres: muchos rechazos, y algunas candidaturas preguntaban cómo uso la IA en mi trabajo. Veía repos con decenas de miles de estrellas, un estudio entero de agentes o un flujo de contenido en una caja, y quise añadir lo que sé de UX a algo así: una herramienta útil desde el primer día, no un ejemplo, y fácil para creativos sin base de IA. Esto es eso, hecho con Claude y usado en mi propia búsqueda. También es mi portfolio. [Lee la historia](https://joselblas.github.io/jobops-kit/story/es/).
 
-En mi propia búsqueda hasta ahora (del 3 de agosto al 16 de noviembre de 2026): 184 ofertas registradas, 59 frenadas en un filtro, 102 candidaturas, 52 rechazos (2 automáticos, uno después de una llamada de entrevista) y 1 llamada de entrevista. Son datos de una sola persona y la herramienta no arregló el mercado. Hizo la búsqueda más clara.
+En mi propia búsqueda hasta ahora (del 3 de agosto al 16 de noviembre de 2026): 202 ofertas registradas, 65 frenadas en un filtro, 105 candidaturas, 53 rechazos (2 automáticos, uno después de una llamada de entrevista) y 1 llamada de entrevista. Son datos de una sola persona y la herramienta no arregló el mercado. Hizo la búsqueda más clara.
 
 Creado por [Jose L. Blas](https://joselblas.com), diseñador de producto, durante una búsqueda real de roles remotos desde España. Sin framework, sin servidor, sin telemetría en el panel.
 

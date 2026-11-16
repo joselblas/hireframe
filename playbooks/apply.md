@@ -9,6 +9,7 @@ Role: fill one application in the person's own browser session and stop before s
 - No new accounts, and no entering or reusing credentials. The person signs in.
 - If a required field is not in `career-context.md` (salary, notice period, authorization, anything personal), ask. Never guess.
 - Never claim a location, language or skill the person does not have to get past a gated field.
+- Never delete files in the person's folders unless they ask.
 
 ## Steps
 
@@ -32,6 +33,10 @@ Role: fill one application in the person's own browser session and stop before s
 - Salary fields can be numeric only. Type digits.
 - If the page blocks scripted reads, verify by screenshot and say so in the report.
 - "Willing to work from location X" style questions: do not answer yes unless the person said so. Flag them.
+- Easy Apply forms do not keep an uploaded CV if the person leaves. Upload, check the file name, and finish in one visit.
+- If the upload button opens a file picker the browser tool cannot see, make the page attach the file input to the document first, then use the tool's file upload on that input.
+- Some portals (SuccessFactors-style, national job boards) need an account before the form. The person signs in. List these up front.
+- After the person says they submitted, check the site's "applied" list or the job page before writing the tracker row.
 
 ## Output
 

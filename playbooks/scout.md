@@ -13,7 +13,12 @@ Role: find and screen listings. Sourcing and scoring only. Never apply.
 2. Specialist remote boards for your field and region.
 3. Curated weekly lists and newsletters for your field, when they tag roles by country. Good yield, and each entry links to the employer's page.
 4. Job boards with filters (remote, region, last 48 hours).
+   Open job feeds by country (daily JSON lists from community-run company directories). Filter by title, drop engineering titles, mark companies already in the tracker.
 5. LinkedIn last, using the person's own session in their browser. Treat cards as pointers only.
+
+Also check job cards for people you can reach (former colleagues, recruiters you know). Note them in the scout output. A warm message beats a cold form.
+
+If a posting has been open for months, treat it as a talent pool. Suggest asking the recruiter whether the role is active.
 
 ## For each listing
 

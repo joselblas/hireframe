@@ -30,6 +30,8 @@ The script prints a markdown report. Read it, then write a short interpretation 
 - If gate failures are high for one source, stop using that source or add a filter. Do not keep paying the cost.
 - If score band does not predict outcomes, say so. It may mean the rubric is wrong, or the sample is too small. Do not defend the rubric.
 - If response is low everywhere, look at the CV and the targeting before blaming the channel. Compare a few tailored CVs against the postings they were for.
+- If response stays near zero after 50 or more applications, change the pool and the channel before the price. Check where the interviews you did get came from (often a recruiter or a contact, not a form).
+- Before suggesting a lower salary, check public pay data for the country and role. Name the range and the source.
 
 ## Report format
 

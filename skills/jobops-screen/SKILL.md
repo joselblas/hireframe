@@ -30,14 +30,17 @@ Check that `career-context.md`, `profile.yml` and `tracker.csv` are available in
 5. State gaps honestly. Do not soften them to make a lead look better.
 6. If sources conflict, stop and ask.
 7. Write plainly. Short sentences, no filler, no em dashes.
+8. Never delete files in the person's folders unless they ask.
 
 ## Scout
 
 Before searching: read `profile.yml` and the tracker. Search the tracker for any company or role before proposing it. Check the "never apply" list.
 
-Sources, best first: company careers pages and ATS boards (Greenhouse, Lever, Ashby, Workable); specialist remote boards; job boards with filters (remote, region, last 48 hours); LinkedIn last, in the person's own session, treating cards as pointers only.
+Sources, best first: company careers pages and ATS boards (Greenhouse, Lever, Ashby, Workable); specialist remote boards; open job feeds by country (filter titles, drop engineering ones, mark companies already tracked); job boards with filters (remote, region, last 48 hours); LinkedIn last, in the person's own session, treating cards as pointers only.
 
 For each listing: find the employer's own posting, run the gates, quote the evidence, and write a tracker row. If no gate failed, give the fit score, the strongest match and the biggest gap.
+
+Note any people the person can reach at the company (shown on job cards). A posting open for months is likely a talent pool: suggest asking the recruiter if it is active.
 
 Output a dated scout note: new leads for the person's decision (company, role, URL, score, gate summary, gap), closed or unsuitable ones with a reason code, and open questions. Keep it short enough to decide in two minutes. Lead with what the person must decide.
 

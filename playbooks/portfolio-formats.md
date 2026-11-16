@@ -52,6 +52,17 @@ Check any screenshot or page the person shares:
 - Is one process artifact shown, not only polished screens?
 - Does the order match the eight frames?
 
+## A "How I work with AI" page
+
+Many postings now ask about AI. A list of tools does not answer it. Build one short page from real material:
+
+1. **AI in the workflow.** One or two real examples with before and after numbers. If faster output only moved the bottleneck (to review, sign-off or another team), say so. That is the senior lesson.
+2. **Judgment and rules.** What stays human: sign-off, one source of facts, fixed gates, data that stays local, accessibility checks.
+3. **Context engineering.** A real system the person built or set up, with its own numbers.
+4. **A dated log.** Short entries of what they learned and when.
+
+Plain language. No hype. Do not tell a hard personal story the person does not want told. Frame it as a lesson.
+
 ## Updating without a website
 
 The person pastes a screenshot or export of the current page. The assistant runs the signal check and the visual checklist and returns changes in the person's format, frame by frame. For a PDF, a new page list. For a Figma file, a list of layers to edit. The person applies them.
