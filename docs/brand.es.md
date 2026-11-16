@@ -1,6 +1,6 @@
 # Marca fAInd
 
-La versión en vivo, con descargas, está en [design/brand/](https://joselblas.github.io/jobops-kit/design/brand/) (en inglés).
+La versión en vivo, con descargas, está en [design/brand/](https://joselblas.github.io/hireframe/design/brand/) (en inglés).
 
 ## La idea
 
@@ -10,7 +10,7 @@ Find a job. Keep your head. La IA está escrita dentro de la palabra, sin hacer 
 
 - Se dice "find". Se escribe **fAInd**, con A e I mayúsculas.
 - Una mayúscula en medio de una palabra la leen letra a letra algunos lectores de pantalla. Por eso el logotipo lleva el texto "find" para tecnologías de apoyo. En texto plano, donde no se puede, añade qué es la primera vez: "fAInd, el kit abierto de búsqueda de empleo".
-- El repositorio (`jobops-kit`), los nombres de archivo y las habilidades (`jobops-start` y las demás) conservan su nombre técnico, así que nada de lo ya instalado se rompe.
+- El repositorio se llama **hireframe** (hire + wireframe; antes `jobops-kit`, renombrado en noviembre de 2026; los enlaces antiguos redirigen en GitHub). Los nombres de archivo y las habilidades (`jobops-start` y las demás) conservan su nombre técnico, así que nada de lo ya instalado se rompe.
 - Los títulos de página no pueden llevar texto oculto, así que usan el nombre tal como se escribe.
 
 ### Riesgo del nombre

@@ -33,6 +33,10 @@ The script prints a markdown report. Read it, then write a short interpretation 
 - If response stays near zero after 50 or more applications, change the pool and the channel before the price. Check where the interviews you did get came from (often a recruiter or a contact, not a form).
 - Before suggesting a lower salary, check public pay data for the country and role. Name the range and the source.
 
+## After the report
+
+Run the two loops in `reminders.md`: propose small, evidenced edits to the person's notes, profile or playbooks (they say yes or no to each), and a new search map if `career-context.md` changed. If the week was rough, offer a perspective moment (`perspective.md`), asking first.
+
 ## Report format
 
 1. Headline: one sentence.

@@ -1,20 +1,22 @@
 <p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="design/brand/assets/wordmark-dark.svg"><img src="design/brand/assets/wordmark-light.svg" alt="fAInd" height="64"></picture></p>
 
-# fAInd: the open job search kit for Claude
+# fAInd: the open job search kit for designers, built on Claude
 
-*Find a job. Keep your head.* Say it "find". The repository and the skills keep the technical name `jobops-kit`.
+*Find a job. Keep your head.* Say it "find". The repository is called **hireframe** (hire + wireframe). It was called `jobops-kit` before, and the skills keep their `jobops-` names so nothing you installed breaks.
+
+For UX, UI and product designers who have never used Git, code or an AI agent. You do not need any of them to start.
 
 A calm, careful way to run a remote job search with Claude. **Everything is context, written as text.** You stay in control of everything that leaves your hands.
 
 [Español](README.es.md)
 
-**Why this exists.** I am a UX designer. I used AI to look for work and the results were poor: lots of rejections, and some applications asked how I use AI in my job. I kept seeing repos with tens of thousands of stars, a full studio of agents or a content workflow in a box, and wanted to add what I know as a UX designer to something like that: a tool that is useful from day one, not an example, and easy for creatives with no AI background. This is that, built with Claude and used on my own search. It is also my portfolio. [Read the story](https://joselblas.github.io/jobops-kit/story/) ([en español](https://joselblas.github.io/jobops-kit/story/es/)).
+**Why this exists.** I am a UX designer. I used AI to look for work and the results were poor: lots of rejections, and some applications asked how I use AI in my job. I kept seeing repos with tens of thousands of stars, a full studio of agents or a content workflow in a box, and wanted to add what I know as a UX designer to something like that: a tool that is useful from day one, not an example, and easy for creatives with no AI background. This is that, built with Claude and used on my own search. It is also my portfolio. [Read the story](https://joselblas.github.io/hireframe/story/) ([en español](https://joselblas.github.io/hireframe/story/es/)).
 
 In my own search so far (3 August to 16 November 2026): 202 listings logged, 65 stopped at a gate, 105 applications, 53 rejections (2 automatic, one after an interview call), 1 interview call. It is one person's data, and the tool did not fix the market. It made the search clearer.
 
 Built by [Jose L. Blas](https://joselblas.com), a product designer, during a real search for remote roles from Spain. No framework, no server, no telemetry in the dashboard.
 
-**[Set it up in 15 minutes](https://joselblas.github.io/jobops-kit/setup/)** ([text version](docs/setup.md)) · [Live demo](https://joselblas.github.io/jobops-kit/app/) · [Design and story](https://joselblas.github.io/jobops-kit/design/) · [Design system](docs/design-system.md) · [Brand](docs/brand.md) · [Privacy](docs/privacy.md)
+**[Set it up in 15 minutes](https://joselblas.github.io/hireframe/setup/)** ([text version](docs/setup.md)) · [Live demo](https://joselblas.github.io/hireframe/app/) · [Design and story](https://joselblas.github.io/hireframe/design/) · [Design system](docs/design-system.md) · [Brand](docs/brand.md) · [Privacy](docs/privacy.md)
 
 ![Overview](docs/screenshots/overview-light.png)
 
@@ -28,7 +30,7 @@ You do not write code and you do not configure anything. Claude works from a few
 2. **Say Start.** In a Claude Project, attach your CV and type `Start`. Answer about 15 minutes of questions. Save the three files Claude gives you in a private folder.
 3. **Open the dashboard.** Open `app/index.html` in Chrome or Edge and connect that folder.
 
-Full steps with what you should see at each one: [docs/setup.md](docs/setup.md).
+Full steps with what you should see at each one: [docs/setup.md](docs/setup.md). Before you start, read [how much of your Claude plan this uses](docs/usage.md). It is written for people who have never used an AI agent.
 
 ## Private by design, honest about where the line is
 
@@ -51,9 +53,9 @@ They share one file, `tracker.csv`. The assistant writes proposals. You accept t
 
 ## Pick your path
 
-- **I want the assistant.** Follow [docs/setup.md](docs/setup.md), steps 1 to 8. Install five skills, make a Claude Project, say `Start`. No code.
+- **I want the assistant.** Follow [docs/setup.md](docs/setup.md), steps 1 to 8. Install five skills, make a Claude Project, say `Start`. No code. Optional sixth: `jobops-perspective`.
 - **I use Claude Code.** Same guide, "Other ways to run it".
-- **I only want the dashboard.** Open the [demo](https://joselblas.github.io/jobops-kit/app/), or open `app/index.html` in Chrome or Edge and press **Connect folder** (columns in `app/README.md`).
+- **I only want the dashboard.** Open the [demo](https://joselblas.github.io/hireframe/app/), or open `app/index.html` in Chrome or Edge and press **Connect folder** (columns in `app/README.md`).
 
 ## Principles
 
@@ -71,7 +73,8 @@ They share one file, `tracker.csv`. The assistant writes proposals. You accept t
 | `jobops-screen` | Scout, gates, legitimacy check, fit score |
 | `jobops-craft` | Audit the master CV and portfolio, tune them for each listing |
 | `jobops-apply` | Tailor the CV, fact check, fill the form, stop before Submit |
-| `jobops-review` | Funnel review, email sweep, fit ratings, interview story bank |
+| `jobops-review` | Funnel review, email sweep, fit ratings, interview story bank, learning loop |
+| `jobops-perspective` | Philosophy, not pep talks: a different point of view on rough weeks, if you want one |
 
 Three newer skills, `jobops-vault` (the excavation interview), `jobops-hooks` (hooks, positioning, portfolio formats) and `jobops-cv` (CV built from graded facts), are in `skills/` and are still being tested. Their playbooks are `vault.md`, `hooks.md`, `portfolio-formats.md` and `cv-builder.md`.
 
@@ -97,6 +100,8 @@ scout -> gates -> fit score -> you pick -> tailor CV -> fact check
 | Find replies in your email | `playbooks/inbox-sweep.md` | `scripts/email_sweep.py` |
 | Learn what works | `playbooks/funnel-analytics.md` | `scripts/funnel.py` |
 | Interview prep | `playbooks/interview-story-bank.md` | |
+| Reminders, search map, learning loop | `playbooks/reminders.md` | |
+| A different point of view | `playbooks/perspective.md` | |
 
 Scripts need Python 3 and nothing else. Check a CV: `python3 scripts/cv_factcheck.py --facts career-context.md --cv cv/CV-Company-2026-01-01.docx`.
 

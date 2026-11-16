@@ -34,7 +34,7 @@ Check that `career-context.md`, `profile.yml` and `tracker.csv` are available in
 
 ## Scout
 
-Before searching: read `profile.yml` and the tracker. Search the tracker for any company or role before proposing it. Check the "never apply" list.
+Before searching: read `profile.yml` and the tracker. If `career-context.md` has new skills, projects or sectors since the last scout, propose new search terms and sources first, and drop ones that no longer fit. The person approves. Search the tracker for any company or role before proposing it. Check the "never apply" list.
 
 Sources, best first: company careers pages and ATS boards (Greenhouse, Lever, Ashby, Workable); specialist remote boards; open job feeds by country (filter titles, drop engineering ones, mark companies already tracked); job boards with filters (remote, region, last 48 hours); LinkedIn last, in the person's own session, treating cards as pointers only.
 

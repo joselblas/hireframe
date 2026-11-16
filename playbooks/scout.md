@@ -7,6 +7,10 @@ Role: find and screen listings. Sourcing and scoring only. Never apply.
 1. Read `profile.yml` (gates, targets) and the tracker. Search the tracker for any company or role before proposing it, so nothing is scored twice.
 2. Check the person's "never apply" list.
 
+## Search map
+
+Search terms and sources come from the fact file, not from habit. When `career-context.md` changes, propose an updated search map first (see `reminders.md`, loop 1): new titles, skills, sectors and sources, and ones to drop. The person approves it.
+
 ## Sources, best first
 
 1. Company careers pages and ATS boards (Greenhouse, Lever, Ashby, Workable) for companies on the target list.

@@ -2,7 +2,7 @@
 
 ## What this project is
 
-fAInd (repository `jobops-kit`) is a static dashboard that runs in your browser, plus Claude skills, playbooks and small Python scripts that run on your own computer. There is no server, no account system and no telemetry. The dashboard makes no network requests, and the demo page uses fictional data.
+fAInd (repository `hireframe`, formerly `jobops-kit`) is a static dashboard that runs in your browser, plus Claude skills, playbooks and small Python scripts that run on your own computer. There is no server, no account system and no telemetry. The dashboard makes no network requests, and the demo page uses fictional data.
 
 That means the realistic security problems are:
 

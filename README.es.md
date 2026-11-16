@@ -1,20 +1,22 @@
 <p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="design/brand/assets/wordmark-dark.svg"><img src="design/brand/assets/wordmark-light.svg" alt="fAInd" height="64"></picture></p>
 
-# fAInd: el kit abierto de búsqueda de empleo para Claude
+# fAInd: el kit abierto de búsqueda de empleo para diseñadores, hecho con Claude
 
-*Find a job. Keep your head.* Se dice "find". El repositorio y las habilidades conservan el nombre técnico `jobops-kit`.
+*Find a job. Keep your head.* Se dice "find". El repositorio se llama **hireframe** (hire + wireframe, contratar + boceto). Antes se llamaba `jobops-kit`, y las habilidades conservan sus nombres `jobops-` para que nada de lo instalado se rompa.
+
+Para diseñadores UX, UI y de producto que nunca han usado Git, código ni un agente de IA. No necesitas nada de eso para empezar.
 
 Una forma tranquila y cuidadosa de llevar una búsqueda de trabajo remoto con Claude. **Todo es contexto, escrito en texto.** Tú controlas todo lo que sale de tus manos.
 
 [English](README.md)
 
-**Por qué existe.** Soy diseñador UX. Usé IA para buscar trabajo y los resultados fueron pobres: muchos rechazos, y algunas candidaturas preguntaban cómo uso la IA en mi trabajo. Veía repos con decenas de miles de estrellas, un estudio entero de agentes o un flujo de contenido en una caja, y quise añadir lo que sé de UX a algo así: una herramienta útil desde el primer día, no un ejemplo, y fácil para creativos sin base de IA. Esto es eso, hecho con Claude y usado en mi propia búsqueda. También es mi portfolio. [Lee la historia](https://joselblas.github.io/jobops-kit/story/es/).
+**Por qué existe.** Soy diseñador UX. Usé IA para buscar trabajo y los resultados fueron pobres: muchos rechazos, y algunas candidaturas preguntaban cómo uso la IA en mi trabajo. Veía repos con decenas de miles de estrellas, un estudio entero de agentes o un flujo de contenido en una caja, y quise añadir lo que sé de UX a algo así: una herramienta útil desde el primer día, no un ejemplo, y fácil para creativos sin base de IA. Esto es eso, hecho con Claude y usado en mi propia búsqueda. También es mi portfolio. [Lee la historia](https://joselblas.github.io/hireframe/story/es/).
 
 En mi propia búsqueda hasta ahora (del 3 de agosto al 16 de noviembre de 2026): 202 ofertas registradas, 65 frenadas en un filtro, 105 candidaturas, 53 rechazos (2 automáticos, uno después de una llamada de entrevista) y 1 llamada de entrevista. Son datos de una sola persona y la herramienta no arregló el mercado. Hizo la búsqueda más clara.
 
 Creado por [Jose L. Blas](https://joselblas.com), diseñador de producto, durante una búsqueda real de roles remotos desde España. Sin framework, sin servidor, sin telemetría en el panel.
 
-**[Configúralo en 15 minutos](https://joselblas.github.io/jobops-kit/setup/)** ([versión en texto](docs/setup.es.md)) · [Demo](https://joselblas.github.io/jobops-kit/app/) · [Diseño e historia](https://joselblas.github.io/jobops-kit/design/) · [Design system](docs/design-system.es.md) · [Marca](docs/brand.es.md) · [Privacidad](docs/privacy.es.md)
+**[Configúralo en 15 minutos](https://joselblas.github.io/hireframe/setup/)** ([versión en texto](docs/setup.es.md)) · [Demo](https://joselblas.github.io/hireframe/app/) · [Diseño e historia](https://joselblas.github.io/hireframe/design/) · [Design system](docs/design-system.es.md) · [Marca](docs/brand.es.md) · [Privacidad](docs/privacy.es.md)
 
 ![Resumen](docs/screenshots/overview-light.png)
 
@@ -51,9 +53,9 @@ Comparten un archivo, `tracker.csv`. El asistente escribe propuestas. Tú las ac
 
 ## Elige tu camino
 
-- **Quiero el asistente.** Sigue [docs/setup.es.md](docs/setup.es.md), pasos 1 a 8. Instala cinco habilidades, crea un Proyecto y escribe `Start`. Sin código.
+- **Quiero el asistente.** Sigue [docs/setup.es.md](docs/setup.es.md), pasos 1 a 8. Instala cinco habilidades, crea un Proyecto y escribe `Start`. Sin código. Antes, lee [cuánto de tu plan de Claude consume esto](docs/usage.es.md).
 - **Uso Claude Code.** La misma guía, "Otras formas de usarlo".
-- **Solo quiero el panel.** Abre la [demo](https://joselblas.github.io/jobops-kit/app/) o abre `app/index.html` en Chrome o Edge y pulsa **Connect folder** (columnas en `app/README.md`).
+- **Solo quiero el panel.** Abre la [demo](https://joselblas.github.io/hireframe/app/) o abre `app/index.html` en Chrome o Edge y pulsa **Connect folder** (columnas en `app/README.md`).
 
 ## Principios
 
@@ -71,7 +73,8 @@ Comparten un archivo, `tracker.csv`. El asistente escribe propuestas. Tú las ac
 | `jobops-screen` | Explorar, filtros, comprobación de legitimidad, puntuación de encaje |
 | `jobops-craft` | Auditar el CV maestro y el portfolio, y ajustarlos a cada oferta |
 | `jobops-apply` | Adaptar el CV, comprobar los datos, rellenar el formulario y parar antes de enviar |
-| `jobops-review` | Revisión del embudo, barrido de correo, valoraciones de encaje, banco de historias para entrevistas |
+| `jobops-review` | Revisión del embudo, barrido de correo, valoraciones de encaje, banco de historias para entrevistas, bucle de aprendizaje |
+| `jobops-perspective` | Filosofía, no frases de ánimo: otro punto de vista en las semanas duras, si lo quieres |
 
 Tres habilidades más recientes, `jobops-vault` (la entrevista de excavación), `jobops-hooks` (ganchos, posicionamiento, formatos de portfolio) y `jobops-cv` (CV construido con datos graduados), están en `skills/` y todavía se están probando.
 

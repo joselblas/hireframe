@@ -18,6 +18,10 @@ seniority_band: [senior, lead]
 apply_threshold: 4.0            # advice only; lower it if you need income fast
 never_apply:                    # companies you will not work for
   - ExampleCorp
+perspective:                    # a different point of view on rough weeks. See playbooks/perspective.md
+  mode: ask                     # off | ask | on
+  like: []                      # e.g. [socratic, pragmatist]
+  avoid: []                     # e.g. [stoic]
 rules:
   submit: manual                # the agent never presses final Submit
   send_messages: manual         # drafts only

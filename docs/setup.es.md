@@ -1,6 +1,6 @@
 # Configura fAInd en 15 minutos
 
-Versión en inglés: [setup.md](setup.md). Hay una versión ilustrada en https://joselblas.github.io/jobops-kit/setup/.
+Versión en inglés: [setup.md](setup.md). Hay una versión ilustrada en https://joselblas.github.io/hireframe/setup/.
 
 No escribes código y no rellenas plantillas a mano. Instalas las habilidades una vez y Claude te entrevista para escribir tus archivos de partida. La idea en una línea: **todo es contexto, escrito en texto.** Claude lee unos pocos archivos sobre ti y sobre lo que buscas. Nunca se inventa nada.
 
@@ -12,6 +12,7 @@ No escribes código y no rellenas plantillas a mano. Instalas las habilidades un
 | Tu CV actual, como archivo o pegado como texto | Claude parte de él y te pide que confirmes cada dato |
 | Chrome o Edge | El panel guarda directamente en tu carpeta con ellos. En otros navegadores funciona con descarga |
 | Unos 15 minutos | Sobre todo, contestar preguntas sobre ti |
+| Margen en tu plan de Claude | Rellenar formularios en el navegador necesita un plan de pago, y los pasos de agente consumen más. Lee [usage.es.md](usage.es.md) para ver cuánto consume cada paso |
 
 No necesitas Python ni Git. Solo sirven para los scripts opcionales.
 
@@ -25,7 +26,7 @@ Lee [privacy.es.md](privacy.es.md) una vez. Es corto.
 ## Pasos
 
 **1. Descarga los archivos.**
-Abre https://github.com/joselblas/jobops-kit, pulsa **Code**, luego **Download ZIP** y descomprime.
+Abre https://github.com/joselblas/hireframe, pulsa **Code**, luego **Download ZIP** y descomprime.
 Deberías ver una carpeta con `README.md`, `skills`, `app` y `playbooks` dentro.
 
 **2. Crea tu carpeta privada.**
@@ -34,7 +35,7 @@ Deberías ver una carpeta vacía. Tus datos reales vivirán aquí y en ningún o
 
 **3. Añade las habilidades.**
 En Claude abre **Ajustes, Habilidades**. Añade estas cinco desde la carpeta `skills`: `jobops-start`, `jobops-screen`, `jobops-craft`, `jobops-apply`, `jobops-review`. Cada una es una carpeta con un archivo `SKILL.md`. Si Claude pide un zip, comprime antes la carpeta.
-Deberías ver cinco habilidades de JobOps activadas.
+Deberías ver cinco habilidades de JobOps activadas. Opcional: añade también `jobops-perspective` si quieres otro punto de vista en las semanas duras.
 
 **4. Crea un Proyecto.**
 Crea un Proyecto llamado "Búsqueda de trabajo". En sus instrucciones pega: `Use the JobOps skills for job search tasks.`
@@ -80,7 +81,7 @@ Nunca envía una candidatura, ni un mensaje, ni crea una cuenta. El último bot�
 
 - **Sin habilidades.** Salta el paso 3. Sube `AGENTS.md` y todo `playbooks/` al Proyecto, luego escribe `Start`. Claude sigue `playbooks/start.md`.
 - **Con Claude Code.** Pon los tres archivos en la carpeta del repo (están en `.gitignore`) y ejecuta `claude` ahí. Lee `AGENTS.md` solo y usa los playbooks y los scripts directamente. Tus archivos se quedan en disco, pero el texto que Claude lee sigue yendo a Claude.
-- **Solo el panel.** Abre la demo en https://joselblas.github.io/jobops-kit/app/ o abre `app/index.html`. Añade tus ofertas a mano. No hace falta cuenta de Claude.
+- **Solo el panel.** Abre la demo en https://joselblas.github.io/hireframe/app/ o abre `app/index.html`. Añade tus ofertas a mano. No hace falta cuenta de Claude.
 
 ## Si algo no sale bien
 

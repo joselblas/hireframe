@@ -1,6 +1,6 @@
 # fAInd brand
 
-The live version, with downloads, is at [design/brand/](https://joselblas.github.io/jobops-kit/design/brand/).
+The live version, with downloads, is at [design/brand/](https://joselblas.github.io/hireframe/design/brand/).
 
 ## The idea
 
@@ -10,7 +10,7 @@ Find a job. Keep your head. The AI is written into the word, quietly, and is not
 
 - Say it "find". Write it **fAInd**, with a capital A and I.
 - A capital in the middle of a word is read letter by letter by some screen readers. The wordmark therefore carries the text "find" for assistive technology. In plain text, where you cannot do that, add what it is the first time: "fAInd, the open job search kit".
-- The repository (`jobops-kit`), the file names and the skills (`jobops-start` and the others) keep their technical names, so nothing already installed breaks.
+- The repository is **hireframe** (hire + wireframe, renamed from `jobops-kit` in November 2026; old links redirect on GitHub). The file names and the skills (`jobops-start` and the others) keep their technical names, so nothing already installed breaks.
 - Page titles cannot hold hidden text, so they use the name as written.
 
 ### Name risk

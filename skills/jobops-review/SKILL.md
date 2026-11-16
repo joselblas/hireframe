@@ -21,6 +21,16 @@ Reading it: under about 30 applications in a bucket, differences are hints, not 
 
 Report: one-sentence headline; three findings, each with its number and how sure we are; one change to try and how we will know it worked; what was not measured. Do not turn weak signals into advice.
 
+## Learning loop
+
+At the end of each weekly review, list what the week taught (a gate that missed, a wasted source, a form quirk, a channel that worked). Propose small edits to `profile.yml`, the person's notes or a playbook, each with its evidence. The person accepts or skips each. Never change these files without a yes.
+
+If `career-context.md` changed since the last review, also propose a search map: new titles, skills, sectors and sources the new facts make worth trying, and ones that no longer fit. Write it to `reports/search-map-YYYY-MM-DD.md`.
+
+If the week was rough (three or more rejections, or 30 days with no reply) and `perspective` in `profile.yml` is not `off`, offer one perspective moment as in the `jobops-perspective` skill. Ask first.
+
+Reminders the person can schedule: weekly review, follow-ups at 14 and 30 days, profile match after a CV change, monthly pool check. Each run uses plan allowance, so suggest one or two to start. See `playbooks/reminders.md`.
+
 ## Inbox sweep
 
 Find replies in the person's email that the tracker does not know about and propose changes. Read only: never reply, delete or move mail. Input is an mbox or EML export kept in a private folder outside any repo. If `scripts/email_sweep.py` exists it can do a first pass.

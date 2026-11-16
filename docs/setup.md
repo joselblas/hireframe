@@ -1,6 +1,6 @@
 # Set up fAInd in 15 minutes
 
-Spanish version: [setup.es.md](setup.es.md). An illustrated version is at https://joselblas.github.io/jobops-kit/setup/.
+Spanish version: [setup.es.md](setup.es.md). An illustrated version is at https://joselblas.github.io/hireframe/setup/.
 
 You do not write code, and you do not fill in templates by hand. You install the skills once, and Claude interviews you to write your starter files. The whole idea in one line: **everything is context, written as text.** Claude reads a few files about you and about what you want. It never guesses.
 
@@ -12,6 +12,7 @@ You do not write code, and you do not fill in templates by hand. You install the
 | Your current CV, as a file or pasted text | Claude starts from it and asks you to confirm each fact |
 | Chrome or Edge | The dashboard saves straight to your folder in these. Other browsers work with a download |
 | About 15 minutes | Mostly answering questions about yourself |
+| Room in your Claude plan | Filling forms in your browser needs a paid plan, and agent steps use more of it. Read [usage.md](usage.md) to see how much each step uses |
 
 You do not need Python or Git. They are only for the optional scripts.
 
@@ -25,7 +26,7 @@ Read [privacy.md](privacy.md) once. It is short.
 ## Steps
 
 **1. Get the files.**
-Open https://github.com/joselblas/jobops-kit, click **Code**, then **Download ZIP**, and unzip it.
+Open https://github.com/joselblas/hireframe, click **Code**, then **Download ZIP**, and unzip it.
 You should see a folder with `README.md`, `skills`, `app` and `playbooks` inside.
 
 **2. Make your private folder.**
@@ -34,7 +35,7 @@ You should see an empty folder. Your real data will live here and nowhere else.
 
 **3. Add the skills.**
 In Claude open **Settings, Skills**. Add these five skills from the `skills` folder: `jobops-start`, `jobops-screen`, `jobops-craft`, `jobops-apply`, `jobops-review`. Each is a folder with one `SKILL.md` file. If Claude asks for a zip, zip the folder first.
-You should see five JobOps skills switched on.
+You should see five JobOps skills switched on. Optional: also add `jobops-perspective` if you want a different point of view on rough weeks.
 
 **4. Make a Project.**
 Create a Project called "Job search". In its instructions paste: `Use the JobOps skills for job search tasks.`
@@ -80,7 +81,7 @@ It never submits an application, sends a message or creates an account. You pres
 
 - **Without skills.** Skip step 3. Upload `AGENTS.md` and everything in `playbooks/` to the Project instead, then say `Start`. Claude follows `playbooks/start.md`. The rules are the same.
 - **With Claude Code.** Put the three files in the repo folder (they are gitignored) and run `claude` there. It reads `AGENTS.md` by itself and uses the playbooks and scripts directly. Your files stay on disk, but the text Claude reads still goes to Claude.
-- **Dashboard only.** Open the demo at https://joselblas.github.io/jobops-kit/app/ or open `app/index.html`. Add your listings by hand. No Claude account needed.
+- **Dashboard only.** Open the demo at https://joselblas.github.io/hireframe/app/ or open `app/index.html`. Add your listings by hand. No Claude account needed.
 
 ## If something looks wrong
 
