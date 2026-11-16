@@ -32,6 +32,16 @@ def pct(a, b):
     return f"{100 * a / b:.0f}%" if b else "n/a"
 
 
+def source_key(s):
+    """Group free-text sources: 'LinkedIn + Ashby' and 'linkedin' count together.
+
+    The part before '+' is where the lead came from. The part after is the
+    employer page it was verified on, which is not a source.
+    """
+    s = (s or "").split("+")[0].strip().lower()
+    return s or "unknown"
+
+
 def band(score):
     try:
         s = float(score)
@@ -79,7 +89,7 @@ def main(path):
     print("\n## By source (applied only)\n")
     by = defaultdict(list)
     for r in applied:
-        by[(r.get("source") or "unknown").strip() or "unknown"].append(r)
+        by[source_key(r.get("source"))].append(r)
     print("| Source | Applied | Any outcome | Interview+ | Median days to outcome |\n|---|---|---|---|---|")
     for src, rs in sorted(by.items(), key=lambda kv: -len(kv[1])):
         out = [x for x in rs if (x.get("outcome") or "").strip() not in ("", "no-response")]

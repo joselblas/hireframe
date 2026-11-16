@@ -12,7 +12,8 @@ Fastest to slowest:
 
 1. Run `scripts/liveness.py <url>`. It calls the public API for Greenhouse, Lever and Ashby boards and falls back to a plain page check. Result: `OPEN`, `CLOSED` or `UNKNOWN`.
 2. For `UNKNOWN` (JavaScript-rendered pages, Workday, Personio), open the page in the browser and look for the apply button and the closed-posting wording ("no longer accepting", "position filled", "page not found", a redirect to the careers index).
-3. Record the date checked. A posting that was open last week may be closed today.
+3. A fetch tool can return a cached copy. Before a CV is tailored, confirm the posting in a real browser tab. A redirect to the board or careers index (sometimes with `error=true` in the address) means closed.
+4. Record the date checked. A posting that was open last week may be closed today.
 
 ## Step 3: Legitimacy signals
 

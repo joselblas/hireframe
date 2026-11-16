@@ -6,6 +6,8 @@ Goal: find replies in your email that the tracker does not know about, and propo
 - Read only. Never reply, delete or move mail.
 - Every proposal needs evidence: a short quote from the email, in quotation marks. No quote, no proposal.
 - Match to an existing tracker row by company first, then role. If there is no match, propose `applied` only when the email confirms an application. Otherwise leave it out.
+- A reply can come from a parent group, a talent brand or the applicant system, not the company name in the tracker. If nothing matches, check the sender's group and its careers address before leaving the email out. Propose with the reason in the evidence, and mark it low confidence.
+- A rejection for a row logged as unconfirmed also confirms the submission. Say so in the proposal.
 - One row per email. Do not guess dates. Use the date on the email.
 - Automated rejections arriving within about two days of applying are `rejected-auto`.
 - Do not write to `tracker.csv`. Write `proposals.csv` only.

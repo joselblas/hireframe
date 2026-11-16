@@ -74,12 +74,23 @@ def check(url):
         return "UNKNOWN", f"request failed: {body[:80]}"
     if s in (404, 410):
         return "CLOSED", f"HTTP {s}"
+    if final and final.rstrip("/") != url.rstrip("/"):
+        # A closed posting often redirects to the board or careers index.
+        if "error=true" in final:
+            return "CLOSED", f"redirected to {final}"
+        last = url.rstrip("/").split("?")[0].rsplit("/", 1)[-1]
+        if last and last not in final:
+            return "UNKNOWN", f"redirected to {final} (often means closed): check in a browser"
     if s == 200:
-        low = body.lower()
+        # Read visible text only. Script bundles carry strings such as
+        # "This job post is no longer available" on pages that are open.
+        text = re.sub(r"(?is)<(script|style|noscript|template)\b.*?</\1>", " ", body)
+        text = re.sub(r"<[^>]+>", " ", text)
+        low = text.lower()
         for w in CLOSED_WORDS:
             if w in low:
                 return "CLOSED", f"page says: {w!r}"
-        if len(re.sub(r"<[^>]+>", "", body).strip()) < 800:
+        if len(text.strip()) < 800:
             return "UNKNOWN", "page has little text (probably JavaScript-rendered): check in a browser"
         return "OPEN", "page loads with no closed wording (weak evidence)"
     return "UNKNOWN", f"HTTP {s}"

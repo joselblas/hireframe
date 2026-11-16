@@ -19,7 +19,7 @@ Role: fill one application in the person's own browser session and stop before s
 5. Upload the approved CV file.
 6. **Verify the form state, not the screenshot.** Read the values from the page (see quirks below). Compare against what was meant to be entered.
 7. Stop at the final screen. Report: what was filled, what was left blank and why, what the person should look at. Wait.
-8. After the person submits, write the tracker row and any confirmation reference.
+8. After the person submits, write the tracker row and any confirmation reference in the same session. If the tracker cannot be reached, say so in the note, so the next session adds the rows before anything else.
 
 ## Form quirks to check
 
@@ -28,6 +28,9 @@ Role: fill one application in the person's own browser session and stop before s
 - File uploads: use the browser tool's file upload, then confirm the filename shows on the page.
 - Salary questions: if the posting publishes regional bands, anchor to the band for the person's region. Do not default to the floor. Confirm the number with the person first.
 - Auto-filled profile data from job sites and parsers is often wrong (location, dates, seniority). Compare every pre-filled value against `career-context.md`.
+- Required fields can appear only after the first submit attempt. That attempt needs the person's "go" like any other. If new fields appear, stop, show them, and agree the answer before trying again.
+- Salary fields can be numeric only. Type digits.
+- If the page blocks scripted reads, verify by screenshot and say so in the report.
 - "Willing to work from location X" style questions: do not answer yes unless the person said so. Flag them.
 
 ## Output

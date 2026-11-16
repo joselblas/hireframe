@@ -10,7 +10,7 @@ A calm, careful way to run a remote job search with Claude. **Everything is cont
 
 **Why this exists.** I am a UX designer. I used AI to look for work and the results were poor: lots of rejections, and some applications asked how I use AI in my job. I kept seeing repos with tens of thousands of stars, a full studio of agents or a content workflow in a box, and wanted to add what I know as a UX designer to something like that: a tool that is useful from day one, not an example, and easy for creatives with no AI background. This is that, built with Claude and used on my own search. It is also my portfolio. [Read the story](https://joselblas.github.io/jobops-kit/story/) ([en español](https://joselblas.github.io/jobops-kit/story/es/)).
 
-In my own search so far (3 August to 12 November 2026): 148 listings logged, 27 stopped at a gate before any work, 94 applications, 50 rejections (2 automatic, one after an interview call), 1 interview call. It is one person's data, and the tool did not fix the market. It made the search clearer.
+In my own search so far (3 August to 16 November 2026): 184 listings logged, 59 stopped at a gate, 102 applications, 52 rejections (2 automatic, one after an interview call), 1 interview call. It is one person's data, and the tool did not fix the market. It made the search clearer.
 
 Built by [Jose L. Blas](https://joselblas.com), a product designer, during a real search for remote roles from Spain. No framework, no server, no telemetry in the dashboard.
 

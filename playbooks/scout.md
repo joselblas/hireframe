@@ -11,12 +11,13 @@ Role: find and screen listings. Sourcing and scoring only. Never apply.
 
 1. Company careers pages and ATS boards (Greenhouse, Lever, Ashby, Workable) for companies on the target list.
 2. Specialist remote boards for your field and region.
-3. Job boards with filters (remote, region, last 48 hours).
-4. LinkedIn last, using the person's own session in their browser. Treat cards as pointers only.
+3. Curated weekly lists and newsletters for your field, when they tag roles by country. Good yield, and each entry links to the employer's page.
+4. Job boards with filters (remote, region, last 48 hours).
+5. LinkedIn last, using the person's own session in their browser. Treat cards as pointers only.
 
 ## For each listing
 
-1. Find the posting on the employer's own page. See `liveness-and-legitimacy.md`.
+1. Find the posting on the employer's own page. See `liveness-and-legitimacy.md`. Fetch one page per job site at a time. A rate-limited or failed fetch is `unclear`, not closed.
 2. Run the gates in `score-rubric.md`. Quote the evidence.
 3. If no gate failed, give the fit score and the one-line strongest match and biggest gap.
 4. Write a tracker row. Log every listing, including failures. A failed listing that is not logged will be re-checked next week.
