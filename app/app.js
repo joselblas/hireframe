@@ -88,7 +88,7 @@
     "craft.t.tune": ["Use jobops-craft. Tune my CV and portfolio for {co}, {role}. Give me the requirements table with evidence or GAP, the two case studies to lead with, one true headline for this role, what to leave out, and your open questions. Then wait for my approval.", "Usa jobops-craft. Afina mi CV y mi portafolio para {co}, {role}. Dame la tabla de requisitos con evidencia o GAP, los dos casos de estudio con los que abrir, un titular veraz para este rol, qué dejar fuera y tus preguntas abiertas. Después espera mi aprobación."],
    
     "title.apply": ["Apply.", "Candidaturas."], "title.prepare": ["Interview prep.", "Entrevistas."],
-    "meta.listings": ["listings", "ofertas"], "meta.asof": ["as of", "a fecha"], "meta.unsaved": ["unsaved changes", "cambios sin guardar"], "meta.saved": ["saved to file", "guardado en el archivo"],
+    "meta.listings": ["listings", "ofertas"], "meta.asof": ["as of", "a fecha"], "meta.unsaved": ["unsaved changes", "cambios sin guardar"], "meta.saved": ["saved to file", "guardado en el archivo"], "meta.copy": ["copy in this page, not saved to the file", "copia en esta página, sin guardar en el archivo"], "toast.loaded": ["Loaded {f}: {n} listings. Edits stay in this page: use Download CSV to keep them, or Connect folder to save straight to the file.", "Cargado {f}: {n} ofertas. Los cambios se quedan en esta página: usa Descargar CSV para conservarlos, o Conectar carpeta para guardarlos en el archivo."],
     "btn.open": ["Open and edit", "Abrir y editar"], "btn.load": ["Load tracker.csv", "Cargar tracker.csv"], "btn.download": ["Download CSV", "Descargar CSV"],
     "btn.sample": ["Sample data", "Datos de ejemplo"], "btn.add": ["Add listing", "Añadir oferta"], "btn.edit": ["Edit", "Editar"],
     "btn.cancel": ["Cancel", "Cancelar"], "btn.save": ["Save", "Guardar"], "btn.back": ["Back", "Atrás"], "btn.continue": ["Continue", "Continuar"], "btn.skip": ["Skip", "Omitir"],
@@ -309,6 +309,7 @@
     var raw = parseCSV(text);
     state.rows = raw.filter(function (r) { return r.company || r.role; }).map(normalise);
     state.label = label;
+    state.isSample = /^Sample data/.test(label || "");
     var latest = null;
     state.rows.forEach(function (r) { [r.dFound, r.dApplied, r.dOutcome].forEach(function (d) { if (d && (!latest || d > latest)) latest = d; }); });
     var today = new Date();
@@ -356,7 +357,7 @@
   function renderTop() {
     var s = stats();
     $("#meta").textContent = (state.label || "Tracker") + "  ·  " + s.rows.length + " " + tl("meta.listings") + "  ·  " + tl("meta.asof") + " " + state.ref.toISOString().slice(0, 10) +
-      (state.dirty ? "  ·  " + tl("meta.unsaved") : state.handle ? "  ·  " + tl("meta.saved") : "");
+      (state.dirty ? "  ·  " + tl("meta.unsaved") : state.handle ? "  ·  " + tl("meta.saved") : state.isSample ? "" : "  ·  " + tl("meta.copy"));
     $("#title").textContent = tl("title." + state.view);
     var a = "";
     var ready = state.dirState === "ready";
@@ -365,8 +366,7 @@
       if (state.view === "tracker") a += '<button class="btn accent" type="button" data-act="add">' + esc(tl("btn.add")) + "</button>";
       if (ready) a += '<button class="btn ghost" type="button" data-act="fd-refresh">' + esc(tl("fd.refresh")) + "</button>";
       else {
-        if (state.view === "overview") a += '<button type="button" class="btn" data-act="pick-file" data-target="file">' + esc(tl("btn.load")) + "</button>";
-        else more += '<button type="button" class="btn ghost" data-act="pick-file" data-target="file">' + esc(tl("btn.load")) + "</button>";
+        a += '<button type="button" class="btn' + (state.view === "overview" ? "" : " ghost") + '" data-act="pick-file" data-target="file">' + esc(tl("btn.load")) + "</button>";
         more += '<button class="btn ghost" type="button" data-act="sample">' + esc(tl("btn.sample")) + "</button>";
         more += '<button class="btn ghost" type="button" data-act="download">' + esc(tl("btn.download")) + "</button>";
         if (!canDir && window.showOpenFilePicker) more += '<button class="btn ghost" type="button" data-act="open">' + esc(tl("btn.open")) + "</button>";
@@ -435,7 +435,7 @@
     return h + "</div>";
   }
   function welcomeHTML() {
-    if (state.dirState === "ready" || state.welcomeOff || fetchStore("jo.welcome") === "off") return "";
+    if (state.dirState === "ready" || !state.isSample || state.welcomeOff || fetchStore("jo.welcome") === "off") return "";
     return '<section class="card welcome" aria-labelledby="welcomeT"><div><span class="label">' + esc(tl("welcome.k")) + '</span><h2 id="welcomeT">' + esc(tl("welcome.t")) + "</h2><p>" + esc(tl("welcome.s")) + '</p></div><div class="welcome-act"><a class="btn accent" href="../setup/index.html">' + esc(tl("welcome.go")) + '</a><button class="btn ghost" type="button" data-act="welcome-off">' + esc(tl("welcome.no")) + "</button></div></section>";
   }
   function funnelHTML(s) {
@@ -1207,7 +1207,7 @@
       return h.getFile().then(function (file) { return file.text().then(function (text) { state.handle = h; load(text, h.name, true); state.trackerMtime = file.lastModified; toast(t("toast.editing", { f: h.name })); }); });
     }).catch(function (e) { if (e && e.name !== "AbortError") toast(e.message); });
   }
-  function readFile(file) { if (!file) return; var fr = new FileReader(); fr.onload = function () { load(String(fr.result), file.name); }; fr.readAsText(file); }
+  function readFile(file) { if (!file) return; var fr = new FileReader(); fr.onload = function () { load(String(fr.result), file.name); toast(t("toast.loaded", { f: file.name, n: state.rows.length })); }; fr.readAsText(file); }
 
 
   /* ---------- Folder ---------- */
