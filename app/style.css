@@ -452,5 +452,8 @@ li.b-row { position: relative; }
 :root { --gold: #D6AA58; --wm-ai: #477A91; --wm-disc: #477A91; }
 :root[data-theme="dark"] { --wm-ai: #D6AA58; --wm-disc: #A9CDD4; }
 .wm { display: inline-block; height: 30px; width: auto; vertical-align: middle; }
-.wm .i { fill: var(--ink); } .wm .a { fill: var(--wm-ai); } .wm .d { fill: var(--wm-disc); } .wm .o { fill: var(--gold); }
+.wm .i { fill: var(--ink); } .wm .a { fill: var(--wm-ai); } .wm .o { fill: var(--gold); }
+/* Hireframe mark: corner brackets and a gold core in a deep steel ring (light); no ring on dark */
+.wm .f { fill: none; stroke: #2E5C72; stroke-width: 7.5; stroke-linecap: round; stroke-linejoin: round; } .wm .r { fill: #2E5C72; }
+:root[data-theme="dark"] .wm .f { stroke: var(--wm-disc); } :root[data-theme="dark"] .wm .r { fill: none; } :root[data-theme="dark"] .wm .o { r: 11.5px; }
 .brand .wm { height: 32px; }

@@ -21,11 +21,13 @@ For an open-source portfolio project the risk is low. For anything commercial, o
 
 ## Wordmark
 
-A round mark and the name, drawn as outlines so it looks the same everywhere. The AI is in the accent colour. The I has serifs on purpose: in a plain sans a capital I looks like a lower case l and the name reads "fAlnd".
+The Hireframe mark and the name, drawn as outlines so they look the same everywhere. Four wireframe corners, like the handles of a selection in a design tool, frame one gold core: hire plus wireframe, and choosing what matters. "ai" is in the accent colour. The type is Poppins Medium. Chosen on 18 November 2026 from five proposals in `design/brand/proposals/`.
+
+- On light, the gold core sits inside a deep steel ring (`#2E5C72`), because gold on mist is under 3 to 1. On dark and on deep ink the core stands alone.
 
 - Use the supplied files in `design/brand/assets/`. Light version on light, dark version on dark.
-- Clear space: three times the height of the mark's inner dot. Minimum width 96 px for the wordmark, 16 px for the mark alone.
-- Do not retype it, stretch it, outline it, add shadows or recolour it. Do not put the gold AI on a light background.
+- Clear space: three times the width of the gold core. Minimum width 96 px for the wordmark, 16 px for the mark alone.
+- Do not retype it, stretch it, outline it, add shadows or recolour it. Do not put a gold "ai" or a bare gold core on a light background.
 
 ## Colour
 
@@ -61,4 +63,4 @@ Each is true of the product today. Note the two layers of privacy: the dashboard
 
 ## Assets
 
-In `design/brand/assets/`: three wordmarks with the mark (light, dark, deep ink), two without, the mark, a favicon that follows the system theme, a 512 px avatar, a 1200 by 630 share card and a 1584 by 396 LinkedIn banner.
+In `design/brand/assets/`: three wordmarks with the mark (light, dark, deep ink), three without, the mark for light and for dark, a favicon that follows the system theme, a 512 px avatar, a 1200 by 630 share card and a 1584 by 396 LinkedIn banner.

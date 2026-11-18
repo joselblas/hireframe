@@ -21,11 +21,13 @@ Para un proyecto abierto de portfolio el riesgo es bajo. Para algo comercial, o 
 
 ## Logotipo
 
-Una marca redonda y el nombre, dibujados como curvas para que se vean igual en todas partes. La IA va en el color de acento. La I lleva serifas a propósito: en una sans normal, una I mayúscula parece una l minúscula y el nombre se lee "fAlnd".
+La marca Hireframe y el nombre, dibujados como curvas para que se vean igual en todas partes. Cuatro esquinas de wireframe, como los tiradores de una selección en una herramienta de diseño, encuadran un núcleo dorado: hire más wireframe, y elegir lo que importa. "ai" va en el color de acento. La letra es Poppins Medium. Elegida el 18 de noviembre de 2026 entre cinco propuestas en `design/brand/proposals/`.
+
+- Sobre claro, el núcleo dorado va dentro de un anillo de acero profundo (`#2E5C72`), porque el dorado sobre bruma no llega a 3 a 1. Sobre oscuro y sobre tinta profunda, el núcleo va solo.
 
 - Usa los archivos suministrados en `design/brand/assets/`. Versión clara sobre claro, oscura sobre oscuro.
-- Espacio libre: tres veces la altura del punto interior de la marca. Ancho mínimo 96 px para el logotipo, 16 px para la marca sola.
-- No lo reescribas, estires, contornees, le pongas sombras ni lo recolorees. No pongas la IA dorada sobre fondo claro.
+- Espacio libre: tres veces el ancho del núcleo dorado. Ancho mínimo 96 px para el logotipo, 16 px para la marca sola.
+- No lo reescribas, estires, contornees, le pongas sombras ni lo recolorees. No pongas "ai" en dorado ni el núcleo dorado sin anillo sobre fondo claro.
 
 ## Color
 
@@ -61,4 +63,4 @@ Cada uno es cierto hoy. Ojo con las dos capas de privacidad: el panel y tus arch
 
 ## Recursos
 
-En `design/brand/assets/`: tres logotipos con la marca (claro, oscuro, tinta profunda), dos sin ella, la marca, un favicon que sigue el tema del sistema, un avatar de 512 px, una tarjeta para compartir de 1200 por 630 y un banner de LinkedIn de 1584 por 396.
+En `design/brand/assets/`: tres logotipos con la marca (claro, oscuro, tinta profunda), tres sin ella, la marca para claro y para oscuro, un favicon que sigue el tema del sistema, un avatar de 512 px, una tarjeta para compartir de 1200 por 630 y un banner de LinkedIn de 1584 por 396.
