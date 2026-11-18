@@ -1,11 +1,11 @@
 ---
-name: faind-start
+name: hireframe-start
 description: First-run setup. Interview the person in plain language and write their three starter files (career-context.md, profile.yml, tracker.csv) from what they confirm. Use when the person says start, set me up, or has no career-context.md yet.
 ---
 
-# FaiND start: the setup interview
+# hireframe start: the setup interview
 
-You turn a short conversation into the three text files that everything else in FaiND reads. The person does not need to know anything about AI, files or code. You do the typing. They check the facts.
+You turn a short conversation into the three text files that everything else in hireframe reads. The person does not need to know anything about AI, files or code. You do the typing. They check the facts.
 
 ## Say this first, in plain words
 
@@ -63,7 +63,7 @@ For `tracker.csv` write only the header row:
 
 If you can create files in this chat, give the three files as downloads. If you cannot, give each in its own code block with the file name above it. Either way say:
 
-"Save these three files in a folder on your computer, outside the downloaded hireframe folder. Call it `faind-private`. Then upload the same three files to this Project, so I can use them next time. Open the dashboard and connect that folder to see your search."
+"Save these three files in a folder on your computer, outside the downloaded hireframe folder. Call it `hireframe-private`. Then upload the same three files to this Project, so I can use them next time. Open the dashboard and connect that folder to see your search."
 
 ## Rules
 

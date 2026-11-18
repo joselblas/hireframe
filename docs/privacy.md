@@ -2,14 +2,14 @@
 
 Spanish version: [privacy.es.md](privacy.es.md).
 
-**Short version.** FaiND has two layers, and they work differently. The dashboard and your files are local. The assistant is Claude, so whatever you give it is processed by Claude under your account's settings. You decide what to give it.
+**Short version.** hireframe has two layers, and they work differently. The dashboard and your files are local. The assistant is Claude, so whatever you give it is processed by Claude under your account's settings. You decide what to give it.
 
 ## Layer 1: on your computer
 
 | Thing | Where it lives | What leaves your computer |
 |---|---|---|
 | The dashboard (`app/`) | Your browser, running from a file or from the demo page | Nothing. No analytics, no accounts, no fonts or scripts from other sites |
-| `tracker.csv`, `proposals.csv`, `career-vault.md`, `hooks.csv` | The `faind-private` folder you choose | Nothing |
+| `tracker.csv`, `proposals.csv`, `career-vault.md`, `hooks.csv` | The `hireframe-private` folder you choose | Nothing |
 | The scripts (`scripts/`) | Your terminal | Only `liveness.py`, which asks public job-board APIs whether a posting is open |
 | Settings in the dashboard (theme, language, your name for follow-up drafts, ticks in Proof) | Your browser's local storage on this computer | Nothing |
 | The folder permission | Your browser, on this computer | Nothing |
@@ -43,7 +43,7 @@ You do not need these for a good search, so leave them out:
 - References' phone numbers and private emails. Names and roles are enough.
 - Salary history. Write the range you want, not what you earned.
 
-`faind-start` asks you at the beginning what to keep out, and follows your answer.
+`hireframe-start` asks you at the beginning what to keep out, and follows your answer.
 
 ## The assistant's own limits
 
@@ -60,7 +60,7 @@ These are rules in `AGENTS.md`, not guesses about behaviour:
 - Use the scripts alone. Same.
 - Use Claude Code with your files on disk. The files stay on your computer, but the parts Claude reads are still sent to Claude to be processed.
 
-There is no way to use an AI assistant without sending it the text it works on. FaiND keeps that to the minimum, and tells you where the line is.
+There is no way to use an AI assistant without sending it the text it works on. hireframe keeps that to the minimum, and tells you where the line is.
 
 ## Before you publish a fork
 

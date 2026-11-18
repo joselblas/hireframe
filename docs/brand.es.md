@@ -1,33 +1,33 @@
-# Marca FaiND
+# Marca hireframe
 
 La versión en vivo, con descargas, está en [design/brand/](https://joselblas.github.io/hireframe/design/brand/) (en inglés).
 
 ## La idea
 
-Find a job. Keep your head. La IA está escrita dentro de la palabra, sin hacer ruido, y no es el titular. Lo más fuerte del producto es la privacidad, el contexto en texto plano y los números honestos; la IA sirve a eso.
+Find a job. Keep your head. hireframe es un kit de búsqueda de empleo para diseñadores: hire más wireframe (contratar más boceto). La IA escribe, pero no es el titular. Lo más fuerte del producto es la privacidad, el contexto en texto plano y los números honestos; la IA sirve a eso.
 
 ## El nombre
 
-- Se dice "find". Se escribe **FaiND**: F, N y D en mayúscula y "ai" en minúscula.
-- Una mayúscula en medio de una palabra la leen letra a letra algunos lectores de pantalla. Por eso el logotipo lleva el texto "find" para tecnologías de apoyo. En texto plano, donde no se puede, añade qué es la primera vez: "FaiND, el kit abierto de búsqueda de empleo".
-- El repositorio se llama **hireframe** (hire + wireframe; antes `jobops-kit`, renombrado en noviembre de 2026; los enlaces antiguos redirigen en GitHub). Las habilidades pasaron de `jobops-` a `faind-` el 18 de noviembre de 2026 (`faind-start` y las demás), así el nombre del producto es el mismo en todas partes. Quien tenga instaladas las antiguas las quita y añade las nuevas carpetas.
-- Los títulos de página no pueden llevar texto oculto, así que usan el nombre tal como se escribe.
+- Se escribe **hireframe**, todo en minúscula, también al empezar una frase. Se dice "hire-frame".
+- Es un juego de palabras de diseñador: hire (contratar) más wireframe. Los diseñadores lo pillan al momento, y es el mismo nombre que el repositorio, la web y las habilidades, así que solo hay una cosa que recordar y buscar.
+- Nunca publiques el nombre solo. La primera vez en una página, un título o un post, añade qué es: "hireframe, the AI job search kit for designers" (en español: "hireframe, el kit de búsqueda de empleo con IA para diseñadores"). Los buscadores leen "hireframe" como "wireframe", y la descripción es lo que hace que te encuentren.
+- El repositorio se llamó `jobops-kit` hasta noviembre de 2026, y el producto se llamó FaiND durante unos días. Los dos nombres quedan retirados. Los enlaces antiguos de GitHub redirigen. Las habilidades son `hireframe-start` y las demás (antes `jobops-` y luego `faind-`, renombradas el 18 de noviembre de 2026); quien tenga instaladas las antiguas las quita y añade las nuevas carpetas.
 
 ### Riesgo del nombre
 
-Una búsqueda en la web el 13 de noviembre de 2026 encontró otros productos con el mismo nombre o muy parecido: FAIND (una app de IA que conecta personas con intereses parecidos, 2024), Faind (un asistente de compras con IA), Faind (búsqueda profesional y emparejamiento de freelancers, noviembre de 2025) y una empresa con la grafía exacta FaiND que hace una plataforma de sensores con IA para etiquetas RFID (2024). No he comprobado dominios, nombres en redes sociales ni el registro de marcas de la UE (EUIPO).
+Por qué no FaiND: una búsqueda el 13 de noviembre de 2026 encontró varios productos con el mismo nombre o casi (una app de IA llamada FAIND, dos productos Faind distintos y una empresa escrita exactamente FaiND), nadie lo escribiría así y algunos lectores de pantalla deletrean las palabras con mayúsculas en medio.
 
-Para un proyecto abierto de portfolio el riesgo es bajo. Para algo comercial, o si quieres posicionarte por tu propio nombre, es un problema real. Dos mitigaciones: escríbelo siempre con su descripción la primera vez ("el kit abierto de búsqueda de empleo") y mantén el nombre en un solo sitio para poder cambiarlo. En el código el logotipo es un único fragmento SVG y el nombre aparece en unos pocos títulos de página, así que renombrar es un trabajo corto.
+hireframe, comprobado el 18 de noviembre de 2026: los buscadores lo tratan como "wireframe", y el nombre más cercano fue Shireframe, una herramienta antigua de wireframes para programadores, no un producto de búsqueda de empleo. No he comprobado dominios, nombres en redes ni el registro de marcas de la UE (EUIPO). La mitigación es la regla de arriba: acompaña siempre el nombre de su descripción.
 
 ## Logotipo
 
-La marca Hireframe y el nombre, dibujados como curvas para que se vean igual en todas partes. Cuatro esquinas de wireframe, como los tiradores de una selección en una herramienta de diseño, encuadran un núcleo dorado: hire más wireframe, y elegir lo que importa. "ai" va en el color de acento. La letra es Poppins Medium. Elegida el 18 de noviembre de 2026 entre cinco propuestas en `design/brand/proposals/`.
+La marca Hireframe y el nombre, dibujados como curvas para que se vean igual en todas partes. Cuatro esquinas de wireframe, como los tiradores de una selección en una herramienta de diseño, encuadran un núcleo dorado: hire más wireframe, y elegir lo que importa. "hire" va en el color de acento. La letra es Poppins Medium, todo en minúscula. Elegida el 18 de noviembre de 2026 entre cinco propuestas en `design/brand/proposals/`.
 
 - Sobre claro, el núcleo dorado va dentro de un anillo de acero profundo (`#2E5C72`), porque el dorado sobre bruma no llega a 3 a 1. Sobre oscuro y sobre tinta profunda, el núcleo va solo.
 
 - Usa los archivos suministrados en `design/brand/assets/`. Versión clara sobre claro, oscura sobre oscuro.
 - Espacio libre: tres veces el ancho del núcleo dorado. Ancho mínimo 96 px para el logotipo, 16 px para la marca sola.
-- No lo reescribas, estires, contornees, le pongas sombras ni lo recolorees. No pongas "ai" en dorado ni el núcleo dorado sin anillo sobre fondo claro.
+- No lo reescribas, estires, contornees, le pongas sombras ni lo recolorees. No pongas "hire" en dorado ni el núcleo dorado sin anillo sobre fondo claro.
 
 ## Color
 
@@ -47,7 +47,7 @@ Contraste medido: dorado sobre blanco es 2,15 a 1, así que nunca se usa para te
 
 Humor seco y columna estoica. Di el número, qué significa y una frase que valga la pena guardar. Nunca "no te preocupes".
 
-- Suena a FaiND: "A rejection is mail. Not a verdict." "26 applications is a small sample. Treat every comparison as a hint, not a result."
+- Suena a hireframe: "A rejection is mail. Not a verdict." "26 applications is a small sample. Treat every comparison as a hint, not a result."
 - No suena a: "Don't worry, the right role is out there!" "Supercharge your career with AI."
 - Palabras sencillas, frases cortas, sin exageraciones. Escribe para alguien que lee inglés como segunda lengua.
 
@@ -56,10 +56,10 @@ Humor seco y columna estoica. Di el número, qué significa y una frase que valg
 Cada uno es cierto hoy. Ojo con las dos capas de privacidad: el panel y tus archivos son locales, y lo que le das a Claude lo procesa Claude según los ajustes de tu cuenta. Mira [privacidad](privacy.es.md).
 
 - **Lema:** Find a job. Keep your head.
-- **Una línea:** FaiND es un kit abierto de búsqueda de empleo. Lleva un registro honesto, muestra tus probabilidades reales y mantiene tus archivos en tu ordenador.
-- **Descripción corta:** FaiND te ayuda a llevar una búsqueda de empleo tranquila y honesta con Claude. Todo es texto plano, el panel funciona en tu navegador y tus archivos siguen siendo tuyos.
-- **Bio (LinkedIn, X, GitHub):** Kit abierto de búsqueda de empleo para Claude. Números honestos, contexto en texto plano, tus archivos en tu ordenador. Hecho por un diseñador UX durante una búsqueda real.
-- **Descripción del repositorio:** FaiND: a calm, honest job search kit for Claude. Plain-text context, local dashboard, nothing uploaded by the dashboard.
+- **Una línea:** hireframe es el kit de búsqueda de empleo con IA para diseñadores. Código abierto. Lleva un registro honesto, muestra tus probabilidades reales y mantiene tus archivos en tu ordenador.
+- **Descripción corta:** hireframe, el kit de búsqueda de empleo con IA para diseñadores, te ayuda a llevar una búsqueda tranquila y honesta con Claude. Sin código: todo es texto plano, el panel funciona en tu navegador y tus archivos siguen siendo tuyos.
+- **Bio (LinkedIn, X, GitHub):** hireframe: el kit de búsqueda de empleo con IA para diseñadores. Código abierto, sobre Claude, hecho por un diseñador UX durante una búsqueda real. Números honestos, tus archivos en tu ordenador.
+- **Descripción del repositorio:** The AI job search kit for designers, built on Claude. No code, honest numbers, a local dashboard, your files stay on your computer.
 
 ## Recursos
 

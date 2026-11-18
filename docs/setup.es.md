@@ -1,4 +1,4 @@
-# Configura FaiND en 15 minutos
+# Configura hireframe en 15 minutos
 
 Versión en inglés: [setup.md](setup.md). Hay una versión ilustrada en https://joselblas.github.io/hireframe/setup/.
 
@@ -30,15 +30,15 @@ Abre https://github.com/joselblas/hireframe, pulsa **Code**, luego **Download ZI
 Deberías ver una carpeta con `README.md`, `skills`, `app` y `playbooks` dentro.
 
 **2. Crea tu carpeta privada.**
-Crea una carpeta vacía llamada `faind-private` en Documentos, fuera de la carpeta descomprimida.
+Crea una carpeta vacía llamada `hireframe-private` en Documentos, fuera de la carpeta descomprimida.
 Deberías ver una carpeta vacía. Tus datos reales vivirán aquí y en ningún otro sitio.
 
 **3. Añade las habilidades.**
-En Claude abre **Ajustes, Habilidades**. Añade estas cinco desde la carpeta `skills`: `faind-start`, `faind-screen`, `faind-craft`, `faind-apply`, `faind-review`. Cada una es una carpeta con un archivo `SKILL.md`. Si Claude pide un zip, comprime antes la carpeta.
-Deberías ver cinco habilidades de FaiND activadas. Opcional: añade también `faind-perspective` si quieres otro punto de vista en las semanas duras.
+En Claude abre **Ajustes, Habilidades**. Añade estas cinco desde la carpeta `skills`: `hireframe-start`, `hireframe-screen`, `hireframe-craft`, `hireframe-apply`, `hireframe-review`. Cada una es una carpeta con un archivo `SKILL.md`. Si Claude pide un zip, comprime antes la carpeta.
+Deberías ver cinco habilidades de hireframe activadas. Opcional: añade también `hireframe-perspective` si quieres otro punto de vista en las semanas duras.
 
 **4. Crea un Proyecto.**
-Crea un Proyecto llamado "Búsqueda de trabajo". En sus instrucciones pega: `Use the FaiND skills for job search tasks.`
+Crea un Proyecto llamado "Búsqueda de trabajo". En sus instrucciones pega: `Use the hireframe skills for job search tasks.`
 Deberías ver un Proyecto vacío.
 
 **5. Escribe Start.**
@@ -46,7 +46,7 @@ Abre un chat dentro del Proyecto. Adjunta tu CV si lo tienes. Escribe: `Start`.
 Claude te explica cómo funciona, te pregunta qué quieres dejar fuera y luego te hace preguntas de una en una. Te enseña cada dato antes de guardarlo. Deja en blanco lo que no sepas. Un hueco es seguro, una suposición no.
 Al final deberías recibir tres archivos: `career-context.md`, `profile.yml` y `tracker.csv`.
 
-**6. Guarda los tres archivos en `faind-private`.**
+**6. Guarda los tres archivos en `hireframe-private`.**
 Deberías ver tres archivos en la carpeta.
 
 **7. Sube esos mismos tres archivos al Proyecto.**
@@ -58,7 +58,7 @@ En un chat nuevo del Proyecto escribe: `Scout today's listings and run the gates
 Deberías recibir una nota corta: ofertas nuevas con puntuación, los filtros comprobados en la página de la empresa con cita literal como prueba, y una lista de ofertas descartadas con el motivo de cada una.
 
 **9. Abre el panel.**
-Abre `app/index.html` de la carpeta descomprimida en Chrome o Edge. Pulsa **Connect folder** y elige `faind-private`.
+Abre `app/index.html` de la carpeta descomprimida en Chrome o Edge. Pulsa **Connect folder** y elige `hireframe-private`.
 Deberías ver tu propia búsqueda en el resumen. Los cambios se guardan directamente en tu archivo.
 
 Puedes parar tras el paso 8 y usar solo el asistente, o abrir solo el panel del paso 9 con tu propio `tracker.csv`.
@@ -87,7 +87,7 @@ Nunca envía una candidatura, ni un mensaje, ni crea una cuenta. El último bot�
 
 | Ves | Prueba |
 |---|---|
-| Claude no se ofrece a empezar | Comprueba que `faind-start` está activada en Ajustes, Habilidades. O escribe: `Use the faind-start skill` |
+| Claude no se ofrece a empezar | Comprueba que `hireframe-start` está activada en Ajustes, Habilidades. O escribe: `Use the hireframe-start skill` |
 | El panel enseña datos de ejemplo | Aún no has conectado tu carpeta. Pulsa **Connect folder** |
 | **Connect folder** no funciona | Tu navegador no puede guardar en una carpeta. Usa Chrome o Edge, o pulsa **Load tracker.csv** y luego **Download CSV** para guardar |
 | El asistente se inventa un dato | No debería. Corrígelo en el chat, actualiza `career-context.md` y súbelo de nuevo |

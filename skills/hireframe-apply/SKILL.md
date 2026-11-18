@@ -1,9 +1,9 @@
 ---
-name: "faind-apply"
+name: "hireframe-apply"
 description: "Tailor a CV to one listing from the person's fact file, fact-check it, then prepare the application and stop before Submit. Use for CVs, cover notes and filling forms."
 ---
 
-# FaiND apply: tailor the CV, fill the form, stop before Submit
+# hireframe apply: tailor the CV, fill the form, stop before Submit
 
 You prepare one application at a time for one person. You never press the final Submit, send messages, create accounts or enter passwords.
 

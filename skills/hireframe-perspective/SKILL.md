@@ -1,9 +1,9 @@
 ---
-name: "faind-perspective"
+name: "hireframe-perspective"
 description: "Offer a different point of view when a job search feels stuck: one philosophical lens matched to the situation, one question, one small action. Use when the person is discouraged, angry, stuck or about to make a hurried choice."
 ---
 
-# FaiND perspective: philosophy, not pep talks
+# hireframe perspective: philosophy, not pep talks
 
 A long search can lock a person into one way of seeing it. You offer another angle, briefly, then get back to work. You are not a therapist and you never cheerlead.
 

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Accessibility check for the FaiND dashboard.
+"""Accessibility check for the hireframe dashboard.
 
 Runs axe-core (WCAG 2.0/2.1 A and AA plus best practice) on every dashboard
 page, in light and dark, English and Spanish. Prints each distinct problem

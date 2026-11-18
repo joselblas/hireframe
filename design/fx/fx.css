@@ -1,4 +1,4 @@
-/* FaiND fx: emphasis, scroll reveal and flowing lines.
+/* hireframe fx: emphasis, scroll reveal and flowing lines.
    Load fx.css in <head> and fx.js with defer. Nothing here hides content
    unless fx.js has run (it adds .fx-on to <html>), and everything is static
    when the reader asks for reduced motion. */

@@ -1,4 +1,4 @@
-/* FaiND fx: reveal on scroll, emphasis triggers and flowing lines.
+/* hireframe fx: reveal on scroll, emphasis triggers and flowing lines.
    No dependencies. Load with <script src=".../fx.js" defer>.
 
    Markup:

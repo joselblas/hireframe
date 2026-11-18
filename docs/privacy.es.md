@@ -2,14 +2,14 @@
 
 Versión en inglés: [privacy.md](privacy.md).
 
-**Resumen.** FaiND tiene dos capas y funcionan de forma distinta. El panel y tus archivos son locales. El asistente es Claude, así que lo que le des lo procesa Claude según los ajustes de tu cuenta. Tú decides qué le das.
+**Resumen.** hireframe tiene dos capas y funcionan de forma distinta. El panel y tus archivos son locales. El asistente es Claude, así que lo que le des lo procesa Claude según los ajustes de tu cuenta. Tú decides qué le das.
 
 ## Capa 1: en tu ordenador
 
 | Qué | Dónde vive | Qué sale de tu ordenador |
 |---|---|---|
 | El panel (`app/`) | Tu navegador, desde un archivo o desde la página de demo | Nada. Sin analítica, sin cuentas, sin fuentes ni scripts de otros sitios |
-| `tracker.csv`, `proposals.csv`, `career-vault.md`, `hooks.csv` | La carpeta `faind-private` que elijas | Nada |
+| `tracker.csv`, `proposals.csv`, `career-vault.md`, `hooks.csv` | La carpeta `hireframe-private` que elijas | Nada |
 | Los scripts (`scripts/`) | Tu terminal | Solo `liveness.py`, que pregunta a APIs públicas de portales de empleo si una oferta sigue abierta |
 | Ajustes del panel (tema, idioma, tu nombre para los borradores de seguimiento, marcas en Proof) | El almacenamiento local de tu navegador, en este ordenador | Nada |
 | El permiso de carpeta | Tu navegador, en este ordenador | Nada |
@@ -43,7 +43,7 @@ No lo necesitas para una buena búsqueda, así que déjalo fuera:
 - Teléfonos y correos privados de tus referencias. Con el nombre y el cargo basta.
 - Historial salarial. Escribe el rango que quieres, no lo que cobraste.
 
-`faind-start` te pregunta al principio qué dejar fuera y respeta tu respuesta.
+`hireframe-start` te pregunta al principio qué dejar fuera y respeta tu respuesta.
 
 ## Los límites del propio asistente
 
@@ -60,7 +60,7 @@ Son reglas de `AGENTS.md`, no suposiciones sobre su comportamiento:
 - Usa solo los scripts. Igual.
 - Usa Claude Code con tus archivos en disco. Los archivos se quedan en tu ordenador, pero las partes que Claude lee se envían a Claude para procesarlas.
 
-No hay manera de usar un asistente de IA sin enviarle el texto con el que trabaja. FaiND lo reduce al mínimo y te dice dónde está la línea.
+No hay manera de usar un asistente de IA sin enviarle el texto con el que trabaja. hireframe lo reduce al mínimo y te dice dónde está la línea.
 
 ## Antes de publicar un fork
 

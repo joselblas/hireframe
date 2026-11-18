@@ -45,7 +45,7 @@ The dashboard and the site pages (setup, story, design) are checked against WCAG
 | No skip link, and focus stayed behind after changing page | Added, and focus now moves to the page title |
 | A small optional-file note in the folder card was too faint | Full-strength text |
 
-## Result (2026-11-13, after the FaiND palette change)
+## Result (2026-11-13, after the hireframe palette change)
 
 The whole product moved to a new palette (mist, teal, steel and gold). The automated check was run again on the dashboard and on every page, in both themes, and found no violations. Every text colour pair was recomputed: the lowest text pair is 5.06 to 1 and the lowest control border is 3.44 to 1. Gold is used for small text only on dark backgrounds, where it reaches 7.74 to 1.
 

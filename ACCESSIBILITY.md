@@ -2,7 +2,7 @@
 
 ## Commitment
 
-FaiND should be usable by people who work with a keyboard, a screen reader, zoom, high contrast or reduced motion. People who search for work are often tired or stressed, so clear and calm is part of accessible. The target is WCAG 2.1 level AA for the dashboard and the site pages (setup, story, design system and brand).
+hireframe should be usable by people who work with a keyboard, a screen reader, zoom, high contrast or reduced motion. People who search for work are often tired or stressed, so clear and calm is part of accessible. The target is WCAG 2.1 level AA for the dashboard and the site pages (setup, story, design system and brand).
 
 ## What is checked
 

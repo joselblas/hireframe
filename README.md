@@ -1,8 +1,8 @@
-<p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="design/brand/assets/wordmark-dark.svg"><img src="design/brand/assets/wordmark-light.svg" alt="FaiND" height="64"></picture></p>
+<p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="design/brand/assets/wordmark-dark.svg"><img src="design/brand/assets/wordmark-light.svg" alt="hireframe" height="64"></picture></p>
 
-# FaiND: the open job search kit for designers, built on Claude
+# hireframe: the open job search kit for designers, built on Claude
 
-*Find a job. Keep your head.* Say it "find". The repository is called **hireframe** (hire + wireframe). It was called `jobops-kit` before. On 18 November 2026 the skills were renamed from `jobops-` to `faind-`. If you installed the old ones, remove them in Settings, Skills and add the `faind-` folders. Your private folder and files keep working as they are.
+*Find a job. Keep your head.* **hireframe** is the AI job search kit for designers: hire + wireframe. It was called `jobops-kit` before, and for a few days FaiND. On 18 November 2026 everything moved to one name: if you installed older `jobops-` or `faind-` skills, remove them in Settings, Skills and add the `hireframe-` folders. Your private folder and files keep working as they are.
 
 For UX, UI and product designers who have never used Git, code or an AI agent. You do not need any of them to start.
 
@@ -35,7 +35,7 @@ Full steps with what you should see at each one: [docs/setup.md](docs/setup.md).
 ## Private by design, honest about where the line is
 
 - **On your computer only:** the dashboard, your tracker and your private folder. The dashboard makes no network requests, has no accounts and no analytics. We loaded nine pages and recorded the requests to check.
-- **In your Claude account:** what you type or upload to the Project is processed by Claude under your account's privacy settings. You decide what goes in, and `faind-start` asks you at the start what to keep out.
+- **In your Claude account:** what you type or upload to the Project is processed by Claude under your account's privacy settings. You decide what goes in, and `hireframe-start` asks you at the start what to keep out.
 - **The assistant never** submits, sends a message, creates an account or invents a fact about you.
 
 Read [docs/privacy.md](docs/privacy.md) (two minutes).
@@ -53,7 +53,7 @@ They share one file, `tracker.csv`. The assistant writes proposals. You accept t
 
 ## Pick your path
 
-- **I want the assistant.** Follow [docs/setup.md](docs/setup.md), steps 1 to 8. Install five skills, make a Claude Project, say `Start`. No code. Optional sixth: `faind-perspective`.
+- **I want the assistant.** Follow [docs/setup.md](docs/setup.md), steps 1 to 8. Install five skills, make a Claude Project, say `Start`. No code. Optional sixth: `hireframe-perspective`.
 - **I use Claude Code.** Same guide, "Other ways to run it".
 - **I only want the dashboard.** Open the [demo](https://joselblas.github.io/hireframe/app/), or open `app/index.html` in Chrome or Edge and press **Connect folder** (columns in `app/README.md`).
 
@@ -69,14 +69,14 @@ They share one file, `tracker.csv`. The assistant writes proposals. You accept t
 
 | Skill | Covers |
 |---|---|
-| `faind-start` | First-run interview that writes your three starter files |
-| `faind-screen` | Scout, gates, legitimacy check, fit score |
-| `faind-craft` | Audit the master CV and portfolio, tune them for each listing |
-| `faind-apply` | Tailor the CV, fact check, fill the form, stop before Submit |
-| `faind-review` | Funnel review, email sweep, fit ratings, interview story bank, learning loop |
-| `faind-perspective` | Philosophy, not pep talks: a different point of view on rough weeks, if you want one |
+| `hireframe-start` | First-run interview that writes your three starter files |
+| `hireframe-screen` | Scout, gates, legitimacy check, fit score |
+| `hireframe-craft` | Audit the master CV and portfolio, tune them for each listing |
+| `hireframe-apply` | Tailor the CV, fact check, fill the form, stop before Submit |
+| `hireframe-review` | Funnel review, email sweep, fit ratings, interview story bank, learning loop |
+| `hireframe-perspective` | Philosophy, not pep talks: a different point of view on rough weeks, if you want one |
 
-Three newer skills, `faind-vault` (the excavation interview), `faind-hooks` (hooks, positioning, portfolio formats) and `faind-cv` (CV built from graded facts), are in `skills/` and are still being tested. Their playbooks are `vault.md`, `hooks.md`, `portfolio-formats.md` and `cv-builder.md`.
+Three newer skills, `hireframe-vault` (the excavation interview), `hireframe-hooks` (hooks, positioning, portfolio formats) and `hireframe-cv` (CV built from graded facts), are in `skills/` and are still being tested. Their playbooks are `vault.md`, `hooks.md`, `portfolio-formats.md` and `cv-builder.md`.
 
 They are condensed copies of the playbooks and work without the scripts. The playbooks stay the full reference and the path for Claude Code. To check the skills behave, run the test in [docs/testing-skills.md](docs/testing-skills.md). Fit ratings use the anchors in [docs/score-anchors.md](docs/score-anchors.md).
 
@@ -114,7 +114,7 @@ Rounded cards, a left menu, light by default with a dark option, English and Spa
 - **Log an update**: one question per step. A reply arrived, I applied, an interview happened.
 - **Follow-ups**: applications silent for three weeks, each with a short draft in English or Spanish. You copy it and send it yourself. Nothing is sent from the app.
 - **Proposed updates**: the assistant reads your email export and proposes changes with a quote as evidence. You accept or skip each one. It can also propose fit ratings for unrated listings.
-- **CV and portfolio**: tag each application with the CV version and portfolio lead you used and see which gets replies, with the small-sample caveat. Also copy-ready prompts for the `faind-craft` skill.
+- **CV and portfolio**: tag each application with the CV version and portfolio lead you used and see which gets replies, with the small-sample caveat. Also copy-ready prompts for the `hireframe-craft` skill.
 - **Weekly review**: five calm minutes. The week against the one before, a chance to close dead applications, one thing you did well, a focus for next week.
 - **Proof**: a six-point checklist of what a recruiter can find about you, plus your career vault (how many facts are measured, remembered, estimated or open, and which high-relevance ones to firm up first) and your hook ledger with plain-language checks. Load `career-vault.md` and `hooks.csv` from your private folder. Nothing leaves the browser.
 - **Steady** (preview): your own base rate and one dry line after a rejection. After a rejection it shows a dated trail and offers a short, polite feedback request you copy and send yourself.

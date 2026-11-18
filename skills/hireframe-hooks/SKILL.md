@@ -1,9 +1,9 @@
 ---
-name: faind-hooks
+name: hireframe-hooks
 description: Turn true details into hooks that make recruiters ask, write the positioning sentence, run a six-second signal check, and adapt portfolio content to PDF, Figma, Canva, Notion or a website.
 ---
 
-# FaiND hooks and portfolio formats
+# hireframe hooks and portfolio formats
 
 A hook is a true, specific, checkable detail that makes a reader stop skimming. Never bait. If it would embarrass the person when probed, retire it.
 

@@ -1,6 +1,6 @@
 # Fit score anchors
 
-Used by `playbooks/score-rubric.md` and the `faind-screen` skill, so the same listing gets the same rating each time.
+Used by `playbooks/score-rubric.md` and the `hireframe-screen` skill, so the same listing gets the same rating each time.
 
 | Dimension | 1 | 3 | 5 |
 |---|---|---|---|
