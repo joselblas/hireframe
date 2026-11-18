@@ -16,7 +16,7 @@ import sys
 import urllib.error
 import urllib.request
 
-UA = {"User-Agent": "Mozilla/5.0 (jobops liveness check)"}
+UA = {"User-Agent": "Mozilla/5.0 (hireframe liveness check)"}
 CLOSED_WORDS = (
     "no longer accepting", "no longer available", "position has been filled",
     "job is no longer", "this job has expired", "posting has closed",

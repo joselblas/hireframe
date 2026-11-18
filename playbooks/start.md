@@ -1,8 +1,8 @@
 # Start: the setup interview
 
-This is the full playbook for the `jobops-start` skill. Use it when you run without skills: say `Start` and follow it.
+This is the full playbook for the `faind-start` skill. Use it when you run without skills: say `Start` and follow it.
 
-You turn a short conversation into the three text files that everything else in JobOps reads. The person does not need to know anything about AI, files or code. You do the typing. They check the facts.
+You turn a short conversation into the three text files that everything else in FaiND reads. The person does not need to know anything about AI, files or code. You do the typing. They check the facts.
 
 ## Say this first, in plain words
 
@@ -60,7 +60,7 @@ For `tracker.csv` write only the header row:
 
 If you can create files in this chat, give the three files as downloads. If you cannot, give each in its own code block with the file name above it. Either way say:
 
-"Save these three files in a folder on your computer, outside the downloaded JobOps folder. Call it `jobops-private`. Then upload the same three files to this Project, so I can use them next time. Open the dashboard and connect that folder to see your search."
+"Save these three files in a folder on your computer, outside the downloaded hireframe folder. Call it `faind-private`. Then upload the same three files to this Project, so I can use them next time. Open the dashboard and connect that folder to see your search."
 
 ## Rules
 

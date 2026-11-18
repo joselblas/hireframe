@@ -9,7 +9,7 @@ Spanish version: [privacy.es.md](privacy.es.md).
 | Thing | Where it lives | What leaves your computer |
 |---|---|---|
 | The dashboard (`app/`) | Your browser, running from a file or from the demo page | Nothing. No analytics, no accounts, no fonts or scripts from other sites |
-| `tracker.csv`, `proposals.csv`, `career-vault.md`, `hooks.csv` | The `jobops-private` folder you choose | Nothing |
+| `tracker.csv`, `proposals.csv`, `career-vault.md`, `hooks.csv` | The `faind-private` folder you choose | Nothing |
 | The scripts (`scripts/`) | Your terminal | Only `liveness.py`, which asks public job-board APIs whether a posting is open |
 | Settings in the dashboard (theme, language, your name for follow-up drafts, ticks in Proof) | Your browser's local storage on this computer | Nothing |
 | The folder permission | Your browser, on this computer | Nothing |
@@ -43,7 +43,7 @@ You do not need these for a good search, so leave them out:
 - References' phone numbers and private emails. Names and roles are enough.
 - Salary history. Write the range you want, not what you earned.
 
-`jobops-start` asks you at the beginning what to keep out, and follows your answer.
+`faind-start` asks you at the beginning what to keep out, and follows your answer.
 
 ## The assistant's own limits
 

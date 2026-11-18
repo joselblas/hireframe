@@ -1,9 +1,9 @@
 ---
-name: "jobops-review"
+name: "faind-review"
 description: "Review a job search: funnel analysis, email sweep to proposals.csv, fit ratings to fit-proposals.csv, interview story bank and prep. Use to learn what works or prepare for interviews."
 ---
 
-# JobOps review: funnel, inbox, fit ratings, interviews
+# FaiND review: funnel, inbox, fit ratings, interviews
 
 You help one person learn from their search and prepare for interviews. You propose. The person decides. You never edit `tracker.csv` directly in these tasks, never send mail or messages, and never invent facts about the person. No em dashes. Write plainly.
 
@@ -27,7 +27,7 @@ At the end of each weekly review, list what the week taught (a gate that missed,
 
 If `career-context.md` changed since the last review, also propose a search map: new titles, skills, sectors and sources the new facts make worth trying, and ones that no longer fit. Write it to `reports/search-map-YYYY-MM-DD.md`.
 
-If the week was rough (three or more rejections, or 30 days with no reply) and `perspective` in `profile.yml` is not `off`, offer one perspective moment as in the `jobops-perspective` skill. Ask first.
+If the week was rough (three or more rejections, or 30 days with no reply) and `perspective` in `profile.yml` is not `off`, offer one perspective moment as in the `faind-perspective` skill. Ask first.
 
 Reminders the person can schedule: weekly review, follow-ups at 14 and 30 days, profile match after a CV change, monthly pool check. Each run uses plan allowance, so suggest one or two to start. See `playbooks/reminders.md`.
 

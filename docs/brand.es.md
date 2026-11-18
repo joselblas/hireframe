@@ -10,7 +10,7 @@ Find a job. Keep your head. La IA está escrita dentro de la palabra, sin hacer 
 
 - Se dice "find". Se escribe **FaiND**: F, N y D en mayúscula y "ai" en minúscula.
 - Una mayúscula en medio de una palabra la leen letra a letra algunos lectores de pantalla. Por eso el logotipo lleva el texto "find" para tecnologías de apoyo. En texto plano, donde no se puede, añade qué es la primera vez: "FaiND, el kit abierto de búsqueda de empleo".
-- El repositorio se llama **hireframe** (hire + wireframe; antes `jobops-kit`, renombrado en noviembre de 2026; los enlaces antiguos redirigen en GitHub). Los nombres de archivo y las habilidades (`jobops-start` y las demás) conservan su nombre técnico, así que nada de lo ya instalado se rompe.
+- El repositorio se llama **hireframe** (hire + wireframe; antes `jobops-kit`, renombrado en noviembre de 2026; los enlaces antiguos redirigen en GitHub). Las habilidades pasaron de `jobops-` a `faind-` el 18 de noviembre de 2026 (`faind-start` y las demás), así el nombre del producto es el mismo en todas partes. Quien tenga instaladas las antiguas las quita y añade las nuevas carpetas.
 - Los títulos de página no pueden llevar texto oculto, así que usan el nombre tal como se escribe.
 
 ### Riesgo del nombre

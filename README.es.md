@@ -2,7 +2,7 @@
 
 # FaiND: el kit abierto de búsqueda de empleo para diseñadores, hecho con Claude
 
-*Find a job. Keep your head.* Se dice "find". El repositorio se llama **hireframe** (hire + wireframe, contratar + boceto). Antes se llamaba `jobops-kit`, y las habilidades conservan sus nombres `jobops-` para que nada de lo instalado se rompa.
+*Find a job. Keep your head.* Se dice "find". El repositorio se llama **hireframe** (hire + wireframe, contratar + boceto). Antes se llamaba `jobops-kit`. El 18 de noviembre de 2026 las habilidades pasaron de `jobops-` a `faind-`. Si instalaste las antiguas, quítalas en Ajustes, Habilidades y añade las carpetas `faind-`. Tu carpeta privada y tus archivos siguen funcionando igual.
 
 Para diseñadores UX, UI y de producto que nunca han usado Git, código ni un agente de IA. No necesitas nada de eso para empezar.
 
@@ -35,7 +35,7 @@ Pasos completos, con lo que deberías ver en cada uno: [docs/setup.es.md](docs/s
 ## Privado por diseño, y claro sobre dónde está la línea
 
 - **Solo en tu ordenador:** el panel, tu tracker y tu carpeta privada. El panel no hace peticiones de red, no tiene cuentas ni analítica. Cargamos nueve páginas y registramos las peticiones para comprobarlo.
-- **En tu cuenta de Claude:** lo que escribas o subas al Proyecto lo procesa Claude según los ajustes de privacidad de tu cuenta. Tú decides qué entra, y `jobops-start` te pregunta al principio qué dejar fuera.
+- **En tu cuenta de Claude:** lo que escribas o subas al Proyecto lo procesa Claude según los ajustes de privacidad de tu cuenta. Tú decides qué entra, y `faind-start` te pregunta al principio qué dejar fuera.
 - **El asistente nunca** envía una candidatura, manda un mensaje, crea una cuenta ni se inventa un dato sobre ti.
 
 Lee [docs/privacy.es.md](docs/privacy.es.md) (dos minutos).
@@ -69,14 +69,14 @@ Comparten un archivo, `tracker.csv`. El asistente escribe propuestas. Tú las ac
 
 | Habilidad | Qué cubre |
 |---|---|
-| `jobops-start` | Entrevista inicial que escribe tus tres archivos de partida |
-| `jobops-screen` | Explorar, filtros, comprobación de legitimidad, puntuación de encaje |
-| `jobops-craft` | Auditar el CV maestro y el portfolio, y ajustarlos a cada oferta |
-| `jobops-apply` | Adaptar el CV, comprobar los datos, rellenar el formulario y parar antes de enviar |
-| `jobops-review` | Revisión del embudo, barrido de correo, valoraciones de encaje, banco de historias para entrevistas, bucle de aprendizaje |
-| `jobops-perspective` | Filosofía, no frases de ánimo: otro punto de vista en las semanas duras, si lo quieres |
+| `faind-start` | Entrevista inicial que escribe tus tres archivos de partida |
+| `faind-screen` | Explorar, filtros, comprobación de legitimidad, puntuación de encaje |
+| `faind-craft` | Auditar el CV maestro y el portfolio, y ajustarlos a cada oferta |
+| `faind-apply` | Adaptar el CV, comprobar los datos, rellenar el formulario y parar antes de enviar |
+| `faind-review` | Revisión del embudo, barrido de correo, valoraciones de encaje, banco de historias para entrevistas, bucle de aprendizaje |
+| `faind-perspective` | Filosofía, no frases de ánimo: otro punto de vista en las semanas duras, si lo quieres |
 
-Tres habilidades más recientes, `jobops-vault` (la entrevista de excavación), `jobops-hooks` (ganchos, posicionamiento, formatos de portfolio) y `jobops-cv` (CV construido con datos graduados), están en `skills/` y todavía se están probando.
+Tres habilidades más recientes, `faind-vault` (la entrevista de excavación), `faind-hooks` (ganchos, posicionamiento, formatos de portfolio) y `faind-cv` (CV construido con datos graduados), están en `skills/` y todavía se están probando.
 
 Los playbooks siguen siendo la referencia completa y el camino para Claude Code. Para comprobar que las habilidades se portan bien, ejecuta la prueba de [docs/testing-skills.md](docs/testing-skills.md).
 

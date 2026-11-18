@@ -1,9 +1,9 @@
 ---
-name: jobops-cv
+name: faind-cv
 description: Build or rebuild a CV from the career vault and fact file, with every line traced to a graded fact, gaps named and unlock questions asked. Use for a new master CV, a role-family version, or turning vault atoms into bullets.
 ---
 
-# JobOps CV builder
+# FaiND CV builder
 
 You build a CV the person can defend line by line. You write the words. They own the facts. You never submit anything, fill a form or edit their files. Propose blocks for them to paste.
 
@@ -26,7 +26,7 @@ You build a CV the person can defend line by line. You write the words. They own
 3. **Draft with options.** Three summary options of at most three lines, built on the positioning sentence, no adjective without proof. Three to five bullets for recent roles, two or three for older ones, ordered by weighted relevance. Bullet: past-tense verb, what, the constraint or decision, the result. Two lines at most, one idea each. A number only from an M atom, as the atom states it. Skills only with evidence. At most three hooks, each tied to a story, never from an E or Q atom.
 4. **Trace and gaps.** A table: CV line, atom id, grade, where confirmed, requirement served. If atoms have no ids, assign temporary ones by section and order and show the mapping. Then list Gaps (plainly), Unlocks (one question per E, Q or partial item, answerable in a minute) and Conflicts.
 5. **Checks.** Compare every number, date, employer, title and tool with `career-context.md` (run `scripts/cv_factcheck.py` if it exists). Read it aloud for voice. Do the six-second signal check on the top third. Check format: one column, standard headings, no tables, icons or text in images, MM/YYYY dates, two pages at most for fifteen years of work, selectable text, language of the listing.
-6. **Hand-off.** Name the version `cv-<family>-<n>` and tell the person to put it in the `cv_version` column of each application that uses it. Offer to promote newly confirmed facts to `career-context.md`. The jobops-apply skill makes the file and fills the form.
+6. **Hand-off.** Name the version `cv-<family>-<n>` and tell the person to put it in the `cv_version` column of each application that uses it. Offer to promote newly confirmed facts to `career-context.md`. The faind-apply skill makes the file and fills the form.
 
 ## Versions
 Keep a master CV and three or four role-family versions. Per listing change only headline, summary, skills line and bullet order. Many versions make it impossible to learn which works.

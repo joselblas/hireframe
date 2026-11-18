@@ -30,15 +30,15 @@ Open https://github.com/joselblas/hireframe, click **Code**, then **Download ZIP
 You should see a folder with `README.md`, `skills`, `app` and `playbooks` inside.
 
 **2. Make your private folder.**
-Create an empty folder called `jobops-private` in Documents, not inside the unzipped folder.
+Create an empty folder called `faind-private` in Documents, not inside the unzipped folder.
 You should see an empty folder. Your real data will live here and nowhere else.
 
 **3. Add the skills.**
-In Claude open **Settings, Skills**. Add these five skills from the `skills` folder: `jobops-start`, `jobops-screen`, `jobops-craft`, `jobops-apply`, `jobops-review`. Each is a folder with one `SKILL.md` file. If Claude asks for a zip, zip the folder first.
-You should see five JobOps skills switched on. Optional: also add `jobops-perspective` if you want a different point of view on rough weeks.
+In Claude open **Settings, Skills**. Add these five skills from the `skills` folder: `faind-start`, `faind-screen`, `faind-craft`, `faind-apply`, `faind-review`. Each is a folder with one `SKILL.md` file. If Claude asks for a zip, zip the folder first.
+You should see five FaiND skills switched on. Optional: also add `faind-perspective` if you want a different point of view on rough weeks.
 
 **4. Make a Project.**
-Create a Project called "Job search". In its instructions paste: `Use the JobOps skills for job search tasks.`
+Create a Project called "Job search". In its instructions paste: `Use the FaiND skills for job search tasks.`
 You should see an empty Project.
 
 **5. Say start.**
@@ -46,7 +46,7 @@ Open a chat in the Project. Attach your CV if you have one. Type: `Start`.
 Claude explains how this works, asks what to keep private, then asks you questions one at a time. It shows you each fact before keeping it. Leave anything you do not know blank. A blank is safe, a guess is not.
 At the end you should get three files: `career-context.md`, `profile.yml` and `tracker.csv`.
 
-**6. Save the three files in `jobops-private`.**
+**6. Save the three files in `faind-private`.**
 You should see three files in the folder.
 
 **7. Upload the same three files to the Project.**
@@ -58,7 +58,7 @@ In a new chat in the Project type: `Scout today's listings and run the gates.`
 You should get a short note: new leads with a score, the gates checked on the employer's own page with quoted evidence, and a list of listings that did not pass, each with the reason.
 
 **9. Open the dashboard.**
-Open `app/index.html` from the unzipped folder in Chrome or Edge. Press **Connect folder** and choose `jobops-private`.
+Open `app/index.html` from the unzipped folder in Chrome or Edge. Press **Connect folder** and choose `faind-private`.
 You should see your own search in the overview. Edits save straight back to your file.
 
 You can stop after step 8 and use only the assistant, or open only the dashboard from step 9 with your own `tracker.csv`.
@@ -87,7 +87,7 @@ It never submits an application, sends a message or creates an account. You pres
 
 | You see | Try |
 |---|---|
-| Claude does not offer to start | Check `jobops-start` is switched on in Settings, Skills. Or type: `Use the jobops-start skill` |
+| Claude does not offer to start | Check `faind-start` is switched on in Settings, Skills. Or type: `Use the faind-start skill` |
 | The dashboard shows sample data | You have not connected your folder yet. Press **Connect folder** |
 | No **Connect folder** button works | Your browser cannot save to a folder. Use Chrome or Edge, or press **Load tracker.csv** and then **Download CSV** to save |
 | The assistant invents a fact | It should not. Correct it in the chat, update `career-context.md` and upload it again |

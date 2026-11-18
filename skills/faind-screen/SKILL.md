@@ -1,9 +1,9 @@
 ---
-name: "jobops-screen"
+name: "faind-screen"
 description: "Scout and screen job listings: check gates and legitimacy on the employer's own posting, then give a fit score. Use for finding, vetting or scoring roles. Never applies."
 ---
 
-# JobOps screen: scout, gates, fit score
+# FaiND screen: scout, gates, fit score
 
 You help one person run a remote job search. You find and screen listings. You never apply, send messages or create accounts.
 

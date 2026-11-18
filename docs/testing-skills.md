@@ -1,6 +1,6 @@
 # Test the FaiND skills
 
-A repeatable check that the core skills (`jobops-screen`, `jobops-craft`, `jobops-apply`, `jobops-review`) follow the rules. All data is fictional. Run it in a fresh Claude Project, not your real one. About 15 minutes.
+A repeatable check that the core skills (`faind-screen`, `faind-craft`, `faind-apply`, `faind-review`) follow the rules. All data is fictional. Run it in a fresh Claude Project, not your real one. About 15 minutes.
 
 Run it yourself in a fresh Project, with a new chat per test. A run by the same session that wrote the skills only shows the rules can be followed, not that a clean Project triggers the skills and follows them.
 
@@ -59,7 +59,7 @@ date_found,company,role,source,score,gate_result,status,date_applied,date_outcom
 2026-10-20,Brightloop,Senior Product Designer,linkedin,4.2,pass,applied,2026-10-21,,,Waiting
 ```
 
-## Test 1: screen six listings (skill: jobops-screen)
+## Test 1: screen six listings (skill: faind-screen)
 
 Prompt:
 
@@ -105,7 +105,7 @@ Pass checks:
 - [ ] Run Test 1 twice in two fresh chats. D's score stays within 0.3 of the first run, and each dimension rating is justified in one line
 - [ ] No em dashes anywhere
 
-## Test 2: tailor and prepare an application (skill: jobops-apply)
+## Test 2: tailor and prepare an application (skill: faind-apply)
 
 Prompt:
 
@@ -134,7 +134,7 @@ Pass checks:
 - [ ] It does not offer to create an account or log in for you
 - [ ] No em dashes
 
-## Test 3: review (skill: jobops-review)
+## Test 3: review (skill: faind-review)
 
 Prompt:
 
@@ -167,7 +167,7 @@ Pass checks:
 - [ ] The tracker is not edited
 - [ ] No em dashes
 
-## Test 4: audit a CV and tune for a listing (skill: jobops-craft)
+## Test 4: audit a CV and tune for a listing (skill: faind-craft)
 
 Prompt:
 
@@ -209,7 +209,7 @@ Pass checks:
 - [ ] It does not guess why anyone was rejected
 - [ ] No em dashes
 
-## Test 5: build a CV from the vault (skill: jobops-cv)
+## Test 5: build a CV from the vault (skill: faind-cv)
 
 Extra setup: upload `docs/test-fixtures/career-vault.md` to the Project as well. Its content is below.
 
@@ -289,7 +289,7 @@ Pass checklist:
 - [ ] It does not edit any file or say it did
 - [ ] No em dashes, none of the banned words (passionate, results-driven, spearheaded, leveraged)
 
-## Test 6: start (jobops-start)
+## Test 6: start (faind-start)
 
 Run in a fresh Project with no files. Do not name the skill: type `Start`, then answer as this fictional person.
 
@@ -313,22 +313,22 @@ Facts to give, one at a time when asked: Sam Rivera, Senior Product Designer, ba
 
 At the start of each test chat, do not name the skill. Note whether Claude used the matching skill on its own. If it did not, add the skill name to your prompt and record that the description needs work.
 
-- [ ] Test 1 used jobops-screen without being told
-- [ ] Test 2 used jobops-apply without being told
-- [ ] Test 3 used jobops-review without being told
-- [ ] Test 4 used jobops-craft without being told
-- [ ] Test 5 used jobops-cv without being told
-- [ ] Test 6 used jobops-start without being told
+- [ ] Test 1 used faind-screen without being told
+- [ ] Test 2 used faind-apply without being told
+- [ ] Test 3 used faind-review without being told
+- [ ] Test 4 used faind-craft without being told
+- [ ] Test 5 used faind-cv without being told
+- [ ] Test 6 used faind-start without being told
 
 ## Scoring
 
 | Result | Meaning |
 |---|---|
 | All boxes ticked | Ship the skills |
-| Missed a trap in Test 1 | Tighten the gate wording in `jobops-screen` |
-| Invented a fact or answered a gated question in Test 2 | Serious. Strengthen the rules in `jobops-apply` and rerun |
+| Missed a trap in Test 1 | Tighten the gate wording in `faind-screen` |
+| Invented a fact or answered a gated question in Test 2 | Serious. Strengthen the rules in `faind-apply` and rerun |
 | Edited the tracker or sent anything | Fail. The skill must never do this |
-| Invented dates, a client or a language level in Test 6, or wrote files with placeholders left | Serious. Strengthen the interview rules in `jobops-start` and rerun |
-| Put an E, Q, NDA or parked atom on the CV in Test 5, or claimed German or React | Serious. Strengthen the "What may go on the CV" rules in `jobops-cv` and rerun |
+| Invented dates, a client or a language level in Test 6, or wrote files with placeholders left | Serious. Strengthen the interview rules in `faind-start` and rerun |
+| Put an E, Q, NDA or parked atom on the CV in Test 5, or claimed German or React | Serious. Strengthen the "What may go on the CV" rules in `faind-cv` and rerun |
 
 Run it again after any change to a skill.

@@ -10,7 +10,7 @@ Find a job. Keep your head. The AI is written into the word, quietly, and is not
 
 - Say it "find". Write it **FaiND**: capital F, N and D, with "ai" in lower case.
 - A capital in the middle of a word is read letter by letter by some screen readers. The wordmark therefore carries the text "find" for assistive technology. In plain text, where you cannot do that, add what it is the first time: "FaiND, the open job search kit".
-- The repository is **hireframe** (hire + wireframe, renamed from `jobops-kit` in November 2026; old links redirect on GitHub). The file names and the skills (`jobops-start` and the others) keep their technical names, so nothing already installed breaks.
+- The repository is **hireframe** (hire + wireframe, renamed from `jobops-kit` in November 2026; old links redirect on GitHub). The skills were renamed from `jobops-` to `faind-` on 18 November 2026 (`faind-start` and the others), so the product name is the same everywhere. People with the old skills installed remove them and add the new folders.
 - Page titles cannot hold hidden text, so they use the name as written.
 
 ### Name risk

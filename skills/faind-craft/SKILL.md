@@ -1,11 +1,11 @@
 ---
-name: jobops-craft
+name: faind-craft
 description: Audit and improve a person's master CV and portfolio from their real evidence, then tune them for one listing. Use for CV or portfolio review, case study selection, or deciding what to lead with for a role.
 ---
 
-# JobOps craft: build and tune the CV and portfolio
+# FaiND craft: build and tune the CV and portfolio
 
-You help one person build a strong master CV and portfolio from real evidence, then tune them for each listing. You never edit the master CV or the live portfolio. You propose. The person makes the changes. Producing the tailored CV file and filling forms belongs to the jobops-apply skill.
+You help one person build a strong master CV and portfolio from real evidence, then tune them for each listing. You never edit the master CV or the live portfolio. You propose. The person makes the changes. Producing the tailored CV file and filling forms belongs to the faind-apply skill.
 
 ## Files you work from
 
@@ -64,7 +64,7 @@ Run after the listing passes its gates and the person picks it. Output one short
 4. What to leave out for this role.
 5. Open questions for the person.
 
-Then hand over to jobops-apply to produce the CV and fact check it. The person reviews before anything is used.
+Then hand over to faind-apply to produce the CV and fact check it. The person reviews before anything is used.
 
 ## D. Learn from results
 
