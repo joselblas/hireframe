@@ -4,13 +4,14 @@
 <meta charset="utf-8">
 <link rel="icon" href="../design/brand/assets/favicon.svg" type="image/svg+xml">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>fAInd. Find a job. Keep your head.</title>
-<meta name="description" content="fAInd keeps an honest record of your job search, shows your real odds, and helps you stay steady when the replies are no. Open source. Runs in your browser.">
+<title>FaiND. Find a job. Keep your head.</title>
+<meta name="description" content="FaiND keeps an honest record of your job search, shows your real odds, and helps you stay steady when the replies are no. Open source. Runs in your browser.">
 <meta property="og:type" content="website">
-<meta property="og:title" content="fAInd. Find a job. Keep your head.">
-<meta property="og:description" content="fAInd keeps an honest record of your job search, shows your real odds, and helps you stay steady when the replies are no. Open source. Runs in your browser.">
+<meta property="og:title" content="FaiND. Find a job. Keep your head.">
+<meta property="og:description" content="FaiND keeps an honest record of your job search, shows your real odds, and helps you stay steady when the replies are no. Open source. Runs in your browser.">
 <meta property="og:image" content="https://joselblas.github.io/hireframe/design/brand/assets/og-card-1200x630.png">
 <meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="../design/fx/fx.css">
 <style>
 :root {
   --surface: #E1EBF0; --raised: #ffffff; --sunken: #D2E1E8;
@@ -178,7 +179,7 @@ footer .fine { color: var(--faint); font-size: 14px; text-align: center; margin-
 .skip:focus { top: 16px; outline: 3px solid var(--calm); outline-offset: 3px; }
 main:focus { outline: none; }
 
-/* fAInd wordmark: colours come from tokens, so it follows the theme */
+/* FaiND wordmark: colours come from tokens, so it follows the theme */
 :root { --gold: #D6AA58; --wm-ai: #477A91; --wm-disc: #477A91; }
 :root[data-theme="dark"] { --wm-ai: #D6AA58; --wm-disc: #A9CDD4; }
 .wm { display: inline-block; height: 30px; width: auto; vertical-align: middle; }
@@ -207,21 +208,21 @@ main:focus { outline: none; }
   <div class="wrap center hero-stage">
     <div class="glow" aria-hidden="true"></div>
     <p class="eyebrow rv">The open job search kit</p>
-    <h1 class="display h1 rv">Job hunting.<br>With a clear head.</h1>
+    <h1 class="display h1 rv">Job hunting.<br>With a <span class="fx-mark fx-full">clear head.</span></h1>
     <p class="lede rv">Keep an honest record of your search. See your real odds. Stay steady when the replies are no.</p>
     <div class="cta rv">
       <a class="btn" href="../app/">Try the demo</a>
       <a class="btn ghost" href="https://github.com/joselblas/hireframe">Get the kit</a>
     </div>
-    <div class="shot rv"><img class="light-img" src="../docs/screenshots/overview-light.png" alt="The fAInd overview: key numbers, funnel, odds of an interview and a fit radar, in light theme." width="1440" height="900"><img class="dark-img" src="../docs/screenshots/overview-dark.png" alt="The fAInd overview in dark theme." width="1440" height="900"></div>
+    <div class="shot rv"><img class="light-img" src="../docs/screenshots/overview-light.png" alt="The FaiND overview: key numbers, funnel, odds of an interview and a fit radar, in light theme." width="1440" height="900"><img class="dark-img" src="../docs/screenshots/overview-dark.png" alt="The FaiND overview in dark theme." width="1440" height="900"></div>
   </div>
 </header>
 
 <section class="statement" style="margin-top: clamp(80px, 12vw, 160px)">
   <div class="wrap center">
     <p class="eyebrow rv">Steady</p>
-    <h2 class="display rv">A rejection is mail.<br><em>Not a verdict.</em></h2>
-    <p class="lede rv">Most applications end in a no. That is the arithmetic of a search, not a judgement of you. fAInd puts the number where you can see it, then gives you something to do next.</p>
+    <h2 class="display rv">A rejection is mail.<br><em class="fx-line">Not a verdict.</em></h2>
+    <p class="lede rv">Most applications end in a no. That is the arithmetic of a search, not a judgement of you. FaiND puts the number where you can see it, then gives you something to do next.</p>
   </div>
 </section>
 
@@ -229,23 +230,23 @@ main:focus { outline: none; }
   <div class="wrap">
     <div class="center">
       <p class="eyebrow rv">The product</p>
-      <h2 class="display h2 rv">Everything a search needs.<br>Nothing it does not.</h2>
+      <h2 class="display h2 rv">Everything a search needs.<br><span class="fx-line">Nothing</span> it does not.</h2>
     </div>
   </div>
 </section>
 
-<section class="alt" style="padding-top: clamp(60px, 9vw, 120px)">
+<section class="alt" style="padding-top: clamp(60px, 9vw, 120px)" data-thread="right">
   <div class="wrap feature">
     <div class="copy">
       <p class="eyebrow rv">Track</p>
       <h3 class="display h2 rv">One honest picture.</h3>
-      <p class="lede rv">The funnel, the waiting list, the sources, the fit. Small samples are labelled as small. There is no fake precision here.</p>
+      <p class="lede rv">The funnel, the waiting list, the sources, the fit. Small samples are labelled as small. <span class="fx-mark">There is no fake precision here.</span></p>
     </div>
     <div class="shot rv"><img class="light-img" src="../docs/screenshots/tracker.png" alt="The tracker: filter chips, search and a sortable table of listings." loading="lazy" width="1440" height="900"><img class="dark-img" src="../docs/screenshots/tracker-dark.png" alt="The tracker in dark theme." loading="lazy" width="1440" height="900"></div>
   </div>
 </section>
 
-<section>
+<section data-thread="left">
   <div class="wrap feature flip">
     <div class="shot rv"><img class="light-img" src="../docs/screenshots/log.png" alt="A one-question form: What was the reply? with six large choices and a progress bar." loading="lazy" width="1440" height="900"><img class="dark-img" src="../docs/screenshots/log-dark.png" alt="The one-question form in dark theme." loading="lazy" width="1440" height="900"></div>
     <div class="copy">
@@ -261,7 +262,7 @@ main:focus { outline: none; }
     <div class="copy">
       <p class="eyebrow rv">Proposed updates</p>
       <h3 class="display h2 rv">Your inbox does the typing. You make the call.</h3>
-      <p class="lede rv">An agent reads your mail and proposes changes, each with the sentence that proves it. Nothing changes until you accept.</p>
+      <p class="lede rv">An agent reads your mail and proposes changes, each with the sentence that proves it. <span class="fx-mark">Nothing changes until you accept.</span></p>
     </div>
     <div class="shot rv"><img class="light-img" src="../docs/screenshots/inbox.png" alt="Proposed updates: cards showing a change, the evidence quoted from the email, and Accept or Skip." loading="lazy" width="1440" height="900"><img class="dark-img" src="../docs/screenshots/inbox-dark.png" alt="Proposed updates in dark theme." loading="lazy" width="1440" height="900"></div>
   </div>
@@ -273,7 +274,7 @@ main:focus { outline: none; }
     <div class="copy">
       <p class="eyebrow rv">Steady <span class="tag calm">Preview</span></p>
       <h3 class="display h2 rv">Know your odds. Keep your head.</h3>
-      <p class="lede rv">Your own base rate, in plain words. A pacing guard that says three is a good day. One dry line to carry after a no.</p>
+      <p class="lede rv">Your own base rate, in plain words. A pacing guard that says <span class="fx-ring">three</span> is a good day. One dry line to carry after a no.</p>
     </div>
   </div>
 </section>
@@ -283,7 +284,7 @@ main:focus { outline: none; }
     <div class="center">
       <p class="eyebrow rv">Private by design</p>
       <h2 class="display h2 rv">Your search stays yours.</h2>
-      <p class="lede rv">fAInd runs in your browser and edits one CSV file on your computer. Nothing is uploaded.</p>
+      <p class="lede rv">FaiND runs in your browser and edits one CSV file on your computer. <span class="fx-mark">Nothing is uploaded.</span></p>
     </div>
     <div class="trio">
       <div class="card rv"><div class="big-no">No</div><h3>account.</h3><p>Open the page. That is the whole setup.</p></div>
@@ -293,11 +294,11 @@ main:focus { outline: none; }
   </div>
 </section>
 
-<section id="design">
+<section id="design" data-thread="weave">
   <div class="wrap">
     <div class="center">
       <p class="eyebrow rv">Design</p>
-      <h2 class="display h2 rv">Calm is a design decision.</h2>
+      <h2 class="display h2 rv"><span class="fx-line">Calm</span> is a design decision.</h2>
       <p class="lede rv">Mist blue and deep steel in light, deep night and warm gold in dark. Cards lift with shadow instead of borders. A no is a closed door, not a red alarm, so it gets a quiet slate. The action colour marks what is yours to act on, and gold is kept for the AI in the name and for small highlights.</p>
     </div>
 
@@ -350,7 +351,7 @@ main:focus { outline: none; }
     <div class="center">
       <p class="eyebrow rv">Voice</p>
       <h2 class="display h2 rv">Dry wit. Stoic backbone.</h2>
-      <p class="lede rv">Encouragement fatigue is real. So fAInd never says "don't worry". It says the number, what it means, and one line worth keeping. In English and in Spanish, as equals.</p>
+      <p class="lede rv">Encouragement fatigue is real. So FaiND never says "don't worry". It says <span class="fx-mark">the number, what it means, and one line worth keeping</span>. In English and in Spanish, as equals.</p>
     </div>
     <div class="voice">
       <div class="vrow rv">
@@ -445,5 +446,6 @@ main:focus { outline: none; }
   }
 })();
 </script>
+<script src="../design/fx/fx.js" defer></script>
 </body>
 </html>

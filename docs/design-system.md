@@ -1,6 +1,6 @@
 # Design system
 
-The tokens and components behind the fAInd dashboard. The live version is [design/system/](https://joselblas.github.io/hireframe/design/system/). It uses the real stylesheet (`app/style.css`), so the page and the product cannot drift apart.
+The tokens and components behind the FaiND dashboard. The live version is [design/system/](https://joselblas.github.io/hireframe/design/system/). It uses the real stylesheet (`app/style.css`), so the page and the product cannot drift apart.
 
 ## Principles
 

@@ -1,6 +1,6 @@
 # Design system
 
-Los tokens y componentes detrás del panel de fAInd. La versión en vivo está en [design/system/](https://joselblas.github.io/hireframe/design/system/) (en inglés). Usa la hoja de estilos real (`app/style.css`), así que la página y el producto no pueden separarse.
+Los tokens y componentes detrás del panel de FaiND. La versión en vivo está en [design/system/](https://joselblas.github.io/hireframe/design/system/) (en inglés). Usa la hoja de estilos real (`app/style.css`), así que la página y el producto no pueden separarse.
 
 ## Principios
 

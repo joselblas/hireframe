@@ -1,6 +1,6 @@
-<p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="design/brand/assets/wordmark-dark.svg"><img src="design/brand/assets/wordmark-light.svg" alt="fAInd" height="64"></picture></p>
+<p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="design/brand/assets/wordmark-dark.svg"><img src="design/brand/assets/wordmark-light.svg" alt="FaiND" height="64"></picture></p>
 
-# fAInd: the open job search kit for designers, built on Claude
+# FaiND: the open job search kit for designers, built on Claude
 
 *Find a job. Keep your head.* Say it "find". The repository is called **hireframe** (hire + wireframe). It was called `jobops-kit` before, and the skills keep their `jobops-` names so nothing you installed breaks.
 

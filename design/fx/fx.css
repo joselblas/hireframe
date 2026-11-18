@@ -1,0 +1,134 @@
+/* FaiND fx: emphasis, scroll reveal and flowing lines.
+   Load fx.css in <head> and fx.js with defer. Nothing here hides content
+   unless fx.js has run (it adds .fx-on to <html>), and everything is static
+   when the reader asks for reduced motion. */
+
+:root {
+  --fx-gold: #D6AA58;
+  --fx-hl: color-mix(in srgb, #D6AA58 46%, transparent);   /* highlighter */
+  --fx-ul: #C9973F;                                          /* drawn underline */
+  --fx-thread: color-mix(in srgb, #477A91 42%, transparent); /* flowing line */
+  --fx-ease: cubic-bezier(.16, 1, .3, 1);
+  --fx-slow: 1.1s;
+}
+:root[data-theme="dark"] {
+  --fx-hl: color-mix(in srgb, #D6AA58 30%, transparent);
+  --fx-ul: #D6AA58;
+  --fx-thread: color-mix(in srgb, #A9CDD4 34%, transparent);
+}
+
+/* ---------- Emphasis ----------------------------------------------------- */
+
+/* 1. Highlighter: a gold marker swipe behind the words, drawn left to right.
+   For the one key phrase of a paragraph or headline. */
+.fx-mark {
+  background-image: linear-gradient(100deg,
+    transparent 0, var(--fx-hl) .3em, var(--fx-hl) calc(100% - .2em), transparent 100%);
+  background-repeat: no-repeat;
+  --h: .42em; --x: 100%;
+  background-position: 0 88%;
+  background-size: var(--x) var(--h);
+  padding: 0 .08em;
+  margin: 0 -.08em;
+  border-radius: .2em;
+  -webkit-box-decoration-break: clone; box-decoration-break: clone;
+}
+.fx-on .fx-mark { --x: 0%; transition: background-size var(--fx-slow) var(--fx-ease) .15s; }
+.fx-on .fx-mark.is-in { --x: 100%; }
+/* a fuller marker for short words in big headlines */
+.fx-mark.fx-full { --h: .86em; background-position: 0 62%; }
+
+/* 2. Drawn underline: a loose hand stroke under a word. For terms you
+   want people to remember (plain text, local, honest). */
+.fx-line {
+  --w: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 10' preserveAspectRatio='none'%3E%3Cpath d='M2 7C20 3 34 3 48 5.5S78 8.5 92 5 112 3 118 4.5' fill='none' stroke='black' stroke-width='2.6' stroke-linecap='round'/%3E%3C/svg%3E");
+  position: relative; white-space: nowrap;
+}
+.fx-line::after {
+  content: ""; position: absolute; left: -.04em; right: -.04em; bottom: -.16em; height: .3em;
+  background: var(--fx-ul);
+  -webkit-mask: var(--w) 0 0 / 100% 100% no-repeat; mask: var(--w) 0 0 / 100% 100% no-repeat;
+  pointer-events: none;
+}
+.fx-on .fx-line::after { clip-path: inset(0 100% 0 0); transition: clip-path .9s var(--fx-ease) .25s; }
+.fx-on .fx-line.is-in::after { clip-path: inset(0 0 0 0); }
+
+/* 3. Ring: a hand-drawn oval around a number or one short word. */
+.fx-ring {
+  --r: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 60' preserveAspectRatio='none'%3E%3Cpath d='M70 6C40 3 8 12 6 30s30 26 58 25 52-8 50-27S82 3 46 9' fill='none' stroke='black' stroke-width='2.4' stroke-linecap='round'/%3E%3C/svg%3E");
+  position: relative; display: inline-block; padding: 0 .12em;
+}
+.fx-ring::after {
+  content: ""; position: absolute; inset: -.18em -.3em -.12em -.26em;
+  background: var(--fx-ul);
+  -webkit-mask: var(--r) 0 0 / 100% 100% no-repeat; mask: var(--r) 0 0 / 100% 100% no-repeat;
+  pointer-events: none;
+}
+.fx-on .fx-ring::after { clip-path: circle(0% at 60% 10%); transition: clip-path 1.2s var(--fx-ease) .3s; }
+.fx-on .fx-ring.is-in::after { clip-path: circle(150% at 60% 10%); }
+
+/* 4. Gold word: colour only, for words on dark bands (gold on night is 7.7:1).
+   Never use on light surfaces. */
+.fx-gold { color: var(--fx-gold); }
+
+/* ---------- Reveal on scroll -------------------------------------------- */
+
+.fx-on [data-reveal] {
+  opacity: 0; transform: translateY(26px);
+  transition: opacity .9s var(--fx-ease), transform 1s var(--fx-ease);
+}
+.fx-on [data-reveal="fade"] { transform: none; }
+.fx-on [data-reveal="scale"] { transform: translateY(18px) scale(.97); }
+.fx-on [data-reveal].is-in { opacity: 1; transform: none; }
+
+/* children appear one after another */
+.fx-on [data-stagger] > * {
+  opacity: 0; transform: translateY(20px);
+  transition: opacity .8s var(--fx-ease), transform .9s var(--fx-ease);
+  transition-delay: calc(var(--i, 0) * 90ms);
+}
+.fx-on [data-stagger].is-in > * { opacity: 1; transform: none; }
+
+/* a rule that draws itself across */
+.fx-rule { height: 1px; border: 0; margin: 0; background: currentColor; opacity: .2; transform-origin: 0 50%; }
+.fx-on .fx-rule { transform: scaleX(0); transition: transform 1.2s var(--fx-ease); }
+.fx-on .fx-rule.is-in { transform: scaleX(1); }
+
+/* ---------- Flowing lines ------------------------------------------------ */
+
+[data-thread] { position: relative; isolation: isolate; }
+.fx-thread {
+  position: absolute; inset: 0; width: 100%; height: 100%;
+  z-index: -1; pointer-events: none; overflow: visible;
+}
+.fx-thread path { fill: none; stroke: var(--fx-thread); stroke-width: 1.6; stroke-linecap: round; }
+.fx-thread .fx-head { fill: var(--fx-gold); opacity: 0; transition: opacity .3s; }
+.fx-thread.is-live .fx-head { opacity: 1; }
+.fx-thread .fx-end { fill: var(--fx-gold); transform-box: fill-box; transform-origin: center; transform: scale(0); transition: transform .6s var(--fx-ease); }
+.fx-thread.is-done .fx-end { transform: scale(1); }
+@media (max-width: 760px) { .fx-thread { display: none; } }
+
+/* ---------- Reduced motion: show everything, still --------------------- */
+@media (prefers-reduced-motion: reduce) {
+  .fx-on [data-reveal], .fx-on [data-stagger] > * { opacity: 1 !important; transform: none !important; transition: none !important; }
+  .fx-on .fx-mark { --x: 100%; transition: none; }
+  .fx-on .fx-line::after, .fx-on .fx-ring::after { clip-path: none; transition: none; }
+  .fx-on .fx-rule { transform: none; transition: none; }
+  .fx-thread .fx-head { display: none; }
+  .fx-thread .fx-end { transform: scale(1); transition: none; }
+}
+@media print {
+  .fx-on [data-reveal], .fx-on [data-stagger] > * { opacity: 1; transform: none; }
+  .fx-thread { display: none; }
+}
+
+/* ---------- Upgrades for the existing .rv reveal ------------------------ */
+/* fx.js numbers .rv siblings so grids cascade instead of landing at once. */
+html.fx-on.js .rv { transition-delay: calc(var(--i, 0) * 80ms); }
+/* screenshots rise and settle */
+html.fx-on.js .shot.rv { transform: translateY(40px) scale(.965); transition-duration: 1.2s; }
+html.fx-on.js .shot.rv.in { transform: none; }
+
+/* count-up numbers: the real value stays for screen readers */
+.fx-sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+[data-count] .fx-n { font-variant-numeric: normal; }

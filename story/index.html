@@ -5,13 +5,14 @@
 <link rel="icon" href="../design/brand/assets/favicon.svg" type="image/svg+xml">
 <link rel="alternate" hreflang="es" href="es/">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>The fAInd story</title>
+<title>The FaiND story</title>
 <meta name="description" content="A UX designer used AI to look for work, got 53 rejections, and designed the tool he wished he had. Real numbers, honest limits, open source.">
 <meta property="og:type" content="website">
-<meta property="og:title" content="The fAInd story">
+<meta property="og:title" content="The FaiND story">
 <meta property="og:description" content="A UX designer used AI to look for work, got 53 rejections, and designed the tool he wished he had. Real numbers, honest limits, open source.">
 <meta property="og:image" content="https://joselblas.github.io/hireframe/design/brand/assets/og-card-1200x630.png">
 <meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="../design/fx/fx.css">
 <style>
 :root {
   --surface: #E1EBF0; --raised: #ffffff; --sunken: #D2E1E8;
@@ -203,7 +204,7 @@ footer .fine { color: var(--faint); font-size: 14px; text-align: center; margin-
 .skip:focus { top: 16px; outline: 3px solid var(--calm); outline-offset: 3px; }
 main:focus { outline: none; }
 
-/* fAInd wordmark: colours come from tokens, so it follows the theme */
+/* FaiND wordmark: colours come from tokens, so it follows the theme */
 :root { --gold: #D6AA58; --wm-ai: #477A91; --wm-disc: #477A91; }
 :root[data-theme="dark"] { --wm-ai: #D6AA58; --wm-disc: #A9CDD4; }
 .wm { display: inline-block; height: 30px; width: auto; vertical-align: middle; }
@@ -218,44 +219,44 @@ main:focus { outline: none; }
 <main id="main" tabindex="-1">
 <header class="hero"><div class="wrap center hero-stage"><div class="glow" aria-hidden="true"></div>
 <p class="eyebrow rv">The story</p>
-<h1 class="display h1 rv">Forty-six noes.<br>One idea.</h1>
+<h1 class="display h1 rv">Forty-six noes.<br><span class="fx-mark fx-full">One idea.</span></h1>
 <p class="lede rv">I am a UX designer. I used AI to look for work, and the results were poor. So I did what designers do. I designed the tool I wished I had.</p>
 <div class="cta rv"><a class="btn" href="../app/">Try the demo</a><a class="btn ghost" href="../setup/">Set it up in 30 minutes</a></div>
 </div></header>
 
 <section class="statement" style="margin-top: clamp(80px, 12vw, 160px)"><div class="wrap center">
 <p class="eyebrow rv">The idea</p>
-<h2 class="display rv">I did not need more automation.<br>I needed <em>a clear head</em>.</h2>
+<h2 class="display rv">I did not need more automation.<br>I needed <em class="fx-line">a clear head</em>.</h2>
 <p class="lede rv" style="color:inherit;opacity:.75">Most applications end in a no. That is the arithmetic of a search. The work is to see it clearly, waste less, and keep going.</p>
 </div></section>
 
-<section id="numbers"><div class="wrap"><div class="center"><p class="eyebrow rv">Real numbers</p><h2 class="display h2 rv">My own search.<br>Not a demo.</h2></div>
+<section id="numbers" data-thread="weave"><div class="wrap"><div class="center"><p class="eyebrow rv">Real numbers</p><h2 class="display h2 rv">My own search.<br>Not a demo.</h2></div>
 <div class="nums">
-<div class="num-card rv"><span class="big-no">202</span><p>listings found and logged</p></div>
-<div class="num-card hl rv"><span class="big-no">65</span><p>stopped at a gate, before any work</p></div>
-<div class="num-card rv"><span class="big-no">105</span><p>applications sent</p></div>
-<div class="num-card rv"><span class="big-no">53</span><p>rejections, 2 automatic and 1 after an interview</p></div>
-<div class="num-card rv"><span class="big-no">1</span><p>interview call, which ended in a no</p></div>
+<div class="num-card rv"><span class="big-no" data-count>202</span><p>listings found and logged</p></div>
+<div class="num-card hl rv"><span class="big-no" data-count>65</span><p>stopped at a gate, before any work</p></div>
+<div class="num-card rv"><span class="big-no" data-count>105</span><p>applications sent</p></div>
+<div class="num-card rv"><span class="big-no" data-count>53</span><p>rejections, 2 automatic and 1 after an interview</p></div>
+<div class="num-card rv"><span class="big-no"><span class="fx-ring">1</span></span><p>interview call, which ended in a no</p></div>
 </div>
 <div class="card rv" style="margin-top:20px;padding:34px 32px 36px"><h3>What the gates caught</h3><p>65 of the 202 listings failed a hard check on the employer's own page. Almost all were caught before I wrote a CV for them.</p>
 <div class="break"><div><b>23</b><span>already closed</span></div><div><b>18</b><span>my country excluded</span></div><div><b>16</b><span>hybrid or office days</span></div><div><b>8</b><span>language, domain or contract</span></div></div></div>
 <p class="note rv">From my own tracker, 3 August to 16 November 2026. No company is named. One person, one search: a story, not a study.</p>
 </div></section>
 
-<section class="alt"><div class="wrap"><div class="chap">
+<section class="alt" data-thread="left"><div class="wrap"><div class="chap">
 <p class="eyebrow rv">Chapter one</p><h2 class="display h2 rv">The problem.</h2>
 <p class="rv">I used AI for my job search, and the results were poor. Rejection letters piled up. Some applications asked me how I use AI in my own work.</p>
-<p class="pull rv">Two questions followed. How do I search better? And how do I show, not tell, that I use AI well?</p>
+<p class="pull rv">Two questions followed. How do I search better? And how do I <span class="fx-mark">show, not tell</span>, that I use AI well?</p>
 </div></div></section>
 
-<section><div class="wrap"><div class="chap">
+<section data-thread="right"><div class="wrap"><div class="chap">
 <p class="eyebrow rv">Chapter two</p><h2 class="display h2 rv">What I saw.</h2>
 <p class="rv">Then I started seeing repositories with tens of thousands of stars. A full design studio made of agents. A content workflow in a box. Impressive engineering.</p>
-<p class="rv">I wanted to add what I know as a UX designer to something like that. Not another example project. A tool that is <strong>useful from the first day</strong>, calm, clear and under your control.</p>
-<p class="rv">And easy for a creative with no AI background. No code. No puzzle of setup files. Thirteen steps and about half an hour.</p>
+<p class="rv">I wanted to add what I know as a UX designer to something like that. Not another example project. A tool that is <strong class="fx-mark">useful from the first day</strong>, calm, clear and under your control.</p>
+<p class="rv">And easy for a creative with no AI background. <span class="fx-line">No code.</span> No puzzle of setup files. Thirteen steps and about half an hour.</p>
 </div></div></section>
 
-<section class="alt"><div class="wrap"><div class="center"><p class="eyebrow rv">Chapter three</p><h2 class="display h2 rv">What I made.</h2><p class="lede rv">Not a bigger pile of agents. A careful one, made for people who are not AI experts, with three promises.</p></div>
+<section class="alt"><div class="wrap"><div class="center"><p class="eyebrow rv">Chapter three</p><h2 class="display h2 rv">What I made.</h2><p class="lede rv">Not a bigger pile of agents. A careful one, made for people who are not AI experts, with <span class="fx-line">three promises</span>.</p></div>
 <div class="trio">
 <div class="card rv"><h3>Gates before scores.</h3><p>Remote, country, language, work rights and legitimacy are checked on the employer's own posting, with a quoted line. "Remote" on an aggregator card often means one country.</p></div>
 <div class="card rv"><h3>Facts only.</h3><p>Every CV is built from one file about you. A check flags numbers, dates and names that file does not contain. Nothing is invented.</p></div>
@@ -268,17 +269,17 @@ main:focus { outline: none; }
 <div class="card rv"><h3>Four skills, no code.</h3><p>Screen, craft, apply and review, packaged for Claude. Craft tunes your CV and portfolio for each role. Install once, set up in about 30 minutes.</p></div>
 </div></div></section>
 
-<section id="built"><div class="wrap"><div class="chap">
+<section id="built" data-thread="left"><div class="wrap"><div class="chap">
 <p class="eyebrow rv">Chapter four</p><h2 class="display h2 rv">Built with AI.<br>In the open.</h2>
-<p class="rv">fAInd was designed by me and built with Claude. I set the direction, made the design decisions and reviewed what came back. Claude wrote code and drafts. I commit every change myself.</p>
+<p class="rv">FaiND was designed by me and built with Claude. I set the direction, made the design decisions and reviewed what came back. Claude wrote code and drafts. <span class="fx-mark">I commit every change myself.</span></p>
 <p class="rv">Every rule the AI follows is written in the repository, so you can read what it may and may not do.</p>
 <div class="rules left rv"><span>Never submits</span><span>Never invents</span><span>Never sends</span><span>Never creates accounts</span></div>
 <p class="rv"><strong>I also failed my own usability test.</strong> Every session I carried CSV files between the browser and a folder by hand. Nobody should have to do that. The dashboard now connects to your folder once, reads your files on its own, saves changes straight back, keeps a copy before it writes, and asks you before it overwrites anything Claude changed.</p>
-<p class="pull rv">That is my answer to the question about AI at work. Not a promise. A working example.</p>
+<p class="pull rv">That is my answer to the question about AI at work. Not a promise. <span class="fx-mark">A working example.</span></p>
 </div></div></section>
 
-<section id="limits" class="alt"><div class="wrap"><div class="chap" style="max-width:860px">
-<p class="eyebrow rv">Chapter five</p><h2 class="display h2 rv">The honest part.</h2>
+<section id="limits" class="alt" data-thread="weave"><div class="wrap"><div class="chap" style="max-width:860px">
+<p class="eyebrow rv">Chapter five</p><h2 class="display h2 rv">The <span class="fx-line">honest</span> part.</h2>
 <p class="rv">I would rather tell you than have you find out.</p>
 <div class="limits">
 <div class="card rv"><span class="n">1</span><p>One interview from 105 applications.</p><small>The tool did not fix the market. It made my search clearer and my effort less wasteful.</small></div>
@@ -288,7 +289,7 @@ main:focus { outline: none; }
 
 <section><div class="wrap center"><p class="eyebrow rv">One more thing</p>
 <h2 class="display h2 rv">Yes, this is also<br>my portfolio.</h2>
-<p class="lede rv">I am a product designer looking for a senior, remote role. I built this to learn by doing, and to show how I use AI: creatively, efficiently and with guardrails. If your team needs that, let us talk. If it helps your own search, even better.</p>
+<p class="lede rv">I am a product designer looking for a senior, remote role. I built this to learn by doing, and to show how I use AI: <span class="fx-mark">creatively, efficiently and with guardrails</span>. If your team needs that, let us talk. If it helps your own search, even better.</p>
 <div class="cta rv"><a class="btn accent" href="https://joselblas.com">See my portfolio</a><a class="btn" href="../app/">Try the demo</a><a class="btn ghost" href="https://github.com/joselblas/hireframe">Get the kit</a></div>
 </div></section>
 
@@ -312,5 +313,6 @@ main:focus { outline: none; }
   }
 })();
 </script>
+<script src="../design/fx/fx.js" defer></script>
 </body>
 </html>

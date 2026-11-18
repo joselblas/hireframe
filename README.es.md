@@ -1,6 +1,6 @@
-<p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="design/brand/assets/wordmark-dark.svg"><img src="design/brand/assets/wordmark-light.svg" alt="fAInd" height="64"></picture></p>
+<p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="design/brand/assets/wordmark-dark.svg"><img src="design/brand/assets/wordmark-light.svg" alt="FaiND" height="64"></picture></p>
 
-# fAInd: el kit abierto de búsqueda de empleo para diseñadores, hecho con Claude
+# FaiND: el kit abierto de búsqueda de empleo para diseñadores, hecho con Claude
 
 *Find a job. Keep your head.* Se dice "find". El repositorio se llama **hireframe** (hire + wireframe, contratar + boceto). Antes se llamaba `jobops-kit`, y las habilidades conservan sus nombres `jobops-` para que nada de lo instalado se rompa.
 

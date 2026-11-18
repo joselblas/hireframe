@@ -1,4 +1,4 @@
-/* fAInd dashboard. No dependencies, no network. Reads tracker.csv in the browser. */
+/* FaiND dashboard. No dependencies, no network. Reads tracker.csv in the browser. */
 (function () {
   "use strict";
 
@@ -390,7 +390,7 @@
     $("#actions").innerHTML = a;
     $("#foot").textContent = tl("foot"); var sk = $("#skip"); if (sk) sk.textContent = tl("a11y.skip");
     document.documentElement.lang = state.lang;
-    document.title = "fAInd · " + tl("nav." + state.view);
+    document.title = "FaiND · " + tl("nav." + state.view);
   }
   function setBadge(n) { return n; }
 

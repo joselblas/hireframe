@@ -448,7 +448,7 @@ li.b-row { position: relative; }
   .btn, .chip, .tag { transition: background-color var(--dur-1) var(--ease), border-color var(--dur-1) var(--ease), transform var(--dur-1) var(--ease); }
 }
 
-/* fAInd wordmark: colours come from tokens, so it follows the theme */
+/* FaiND wordmark: colours come from tokens, so it follows the theme */
 :root { --gold: #D6AA58; --wm-ai: #477A91; --wm-disc: #477A91; }
 :root[data-theme="dark"] { --wm-ai: #D6AA58; --wm-disc: #A9CDD4; }
 .wm { display: inline-block; height: 30px; width: auto; vertical-align: middle; }
